@@ -1,146 +1,180 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Theme Park</title>
-    <style>
-      src=""
-    </style>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbitland Theme Park - Tickets and Packages</title>
+    <link rel="stylesheet" href="tickets.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
     <header>
-      <div class="logo">Logo</div>
-      <div class="logo-text">Logo Text</div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Attractions</a>
-        <a href="#">Tickets</a>
-        <a href="#" class="cart-icon">Cart icon</a>
-        <a href="#" class="search-icon">Search icon</a>
-      </nav>
+        <div class="logo-container">
+            <img src="logo.png" alt="Orbitland Logo" class="logo">
+            <span class="logo-text">Orbitland</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="cart.html" class="cart-icon" aria-label="Shopping Cart">🛒</a></li>
+                <li><a href="#" class="search-icon" aria-label="Search">🔍</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-      <div class="ticket-options section-title">
-        <h2>Ticket Options</h2>
-        <div class="grid">
-          <div class="grid-item">
-            <img src="#" alt="Child Pass" />
-            <h3>Child Pass</h3>
-            <p>A short description that hints terms</p>
-            <p class="price">Price</p>
-            <a href="#" class="buy-now">Buy Now</a>
-          </div>
-          <div class="grid-item">
-            <img src="#" alt="Student Pass" />
-            <h3>Student Pass</h3>
-            <p>A short description that hints terms</p>
-            <p class="price">Price</p>
-            <a href="#" class="buy-now">Buy Now</a>
-          </div>
-          <div class="grid-item">
-            <img src="#" alt="Adult Pass" />
-            <h3>Adult Pass</h3>
-            <p>A short description that hints terms</p>
-            <p class="price">Price</p>
-            <a href="#" class="buy-now">Buy Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="packages-perks section-title">
-        <h2>Packages & Perks</h2>
-        <div class="grid">
-          <div class="grid-item">
-            <img src="#" alt="Family Package" />
-            <h3>Family Package</h3>
-            <p>A short description that hints terms</p>
-            <p class="price">Price</p>
-            <a href="#" class="buy-now">Buy Now</a>
-          </div>
-          <div class="grid-item">
-            <img src="#" alt="Party Package" />
-            <h3>Party Package</h3>
-            <p>A short description that hints terms</p>
-            <p class="price">Price</p>
-            <a href="#" class="buy-now">Buy Now</a>
-          </div>
-          <div class="grid-item">
-            <img src="#" alt="VIP Package" />
-            <h3>VIP Package</h3>
-            <p>A short description that hints terms</p>
-            <p class="price">Price</p>
-            <a href="#" class="buy-now">Buy Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="theme-park-passes section-title">
-        <h2>Theme Park Passes</h2>
-        <div class="grid">
-          <div class="grid-item large">
-            <img src="#" alt="Monthly Pass" />
-            <h3>Monthly Pass</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="price">Price</p>
-            <a href="#" class="buy-now">Buy Now</a>
-          </div>
-          <div class="grid-item large">
-            <img src="#" alt="Annual Pass" />
-            <h3>Annual Pass</h3>
-            <p>
-              I have some low fidelity text here too lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua.
-            </p>
-            <p class="price">Price</p>
-            <a href="#" class="buy-now">Buy Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="add-ons section-title">
-        <h2>Add Ons</h2>
-        <div class="grid">
-          <div class="grid-item">
-            <img src="#" alt="Expedited Entry" />
-            <h3>Expedited Entry</h3>
-            <p>A short description that hints terms</p>
-            <p class="price">Price</p>
-            <a href="#" class="buy-now">Buy Now</a>
-          </div>
-          <div class="grid-item">
-            <img src="#" alt="Buffet" />
-            <h3>Buffet</h3>
-            <p>A short description that hints terms</p>
-            <p class="price">Price</p>
-            <a href="#" class="buy-now">Buy Now</a>
-          </div>
-          <div class="grid-item">
-            <img src="#" alt="Photo Package" />
-            <h3>Photo Package</h3>
-            <p>A short description that hints terms</p>
-            <p class="price">Price</p>
-            <a href="#" class="buy-now">Buy Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
+
+    <main>
+        <section class="ticket-options">
+            <h1>Ticket Options</h1>
+            <div class="grid">
+                <article class="grid-item">
+                    <img src="child-ticket.jpg" alt="Children enjoying space-themed attractions">
+                    <h2>Child Ticket (Ages 3-12)</h2>
+                    <p>Blast off on an interstellar adventure! Full access to all kid-friendly attractions and cosmic playgrounds.</p>
+                    <p class="price">$30</p>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </article>
+                <article class="grid-item">
+                    <img src="student-ticket.jpg" alt="Students exploring educational exhibits">
+                    <h2>Student Ticket (Valid ID required)</h2>
+                    <p>Expand your universe of knowledge! Includes access to educational exhibits and all main attractions.</p>
+                    <p class="price">$35</p>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </article>
+                <article class="grid-item">
+                    <img src="adult-ticket.jpg" alt="Adults on thrilling space rides">
+                    <h2>Adult Ticket (Ages 13+)</h2>
+                    <p>Journey through the cosmos! Enjoy all Orbitland has to offer, including thrill rides and immersive experiences.</p>
+                    <p class="price">$45</p>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </article>
+            </div>
+            <p class="note">* Choose your launch date: Select specific dates or date ranges for your visit. Prices may vary during peak seasons and special events.</p>
+        </section>
+
+        <section class="bundles-packages">
+            <h2>Bundles and Packages</h2>
+            <div class="grid">
+                <article class="grid-item">
+                    <img src="family-package.jpg" alt="Family enjoying Orbitland attractions">
+                    <h3>Family Space Odyssey</h3>
+                    <p>2 Adult + 2 Child tickets, plus a $20 food voucher and free parking.</p>
+                    <p class="price">$140</p>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </article>
+                <article class="grid-item">
+                    <img src="group-package.jpg" alt="Group of friends at Orbitland">
+                    <h3>Cowboy Crew Package</h3>
+                    <p>Perfect for groups! 6 tickets of any type, reserved celebration area, and 10% off merchandise.</p>
+                    <p class="price">$250</p>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </article>
+                <article class="grid-item">
+                    <img src="seasonal-package.jpg" alt="Orbitland during off-peak season">
+                    <h3>Seasonal Mythical Deal</h3>
+                    <p>Valid during off-peak months. 4 tickets of any type, plus 4 Astro Meal vouchers.</p>
+                    <p class="price">$160</p>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="add-ons">
+            <h2>Add-ons and Perks</h2>
+            <div class="grid">
+                <article class="grid-item">
+                    <img src="fast-pass.jpg" alt="Visitors using fast-track entry">
+                    <h3>Warp Speed Entry</h3>
+                    <p>Skip the regular lines on all major attractions.</p>
+                    <p class="price">$20/person</p>
+                    <a href="#" class="buy-now">Add to Cart</a>
+                </article>
+                <article class="grid-item">
+                    <img src="buffet.jpg" alt="Milky Way Restaurant buffet">
+                    <h3>Triassic Feast Buffet</h3>
+                    <p>All-you-can-eat dining at our Milky Way Restaurant.</p>
+                    <p class="price">$25/adult, $15/child</p>
+                    <a href="#" class="buy-now">Add to Cart</a>
+                </article>
+                <article class="grid-item">
+                    <img src="vip-experience.jpg" alt="VIP guide with visitors">
+                    <h3>Enchanted VIP Experience</h3>
+                    <p>Personal guide, exclusive attraction access, and premium viewing for shows.</p>
+                    <p class="price">$75/person</p>
+                    <a href="#" class="buy-now">Add to Cart</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="annual-monthly-passes">
+            <h2>Annual and Monthly Passes</h2>
+            <div class="grid">
+                <article class="grid-item">
+                    <img src="monthly-pass.jpg" alt="Monthly Pass holder benefits">
+                    <h3>Monthly Pass</h3>
+                    <p>Perfect for frequent explorers! Unlimited visits each month, 5% off food and merchandise.</p>
+                    <p class="price">$49/month</p>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </article>
+                <article class="grid-item">
+                    <img src="silver-pass.jpg" alt="Silver Annual Pass holder benefits">
+                    <h3>Silver Annual Pass</h3>
+                    <p>Unlimited visits for 12 months, 10% off food and merchandise, free parking.</p>
+                    <p class="price">$199</p>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </article>
+                <article class="grid-item">
+                    <img src="gold-pass.jpg" alt="Gold Annual Pass holder benefits">
+                    <h3>Gold Annual Pass</h3>
+                    <p>All Silver benefits plus Warp Speed Entry, 4 guest passes, and exclusive event invites.</p>
+                    <p class="price">$299</p>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </article>
+            </div>
+            <div class="pass-benefits">
+                <h3>All passes include:</h3>
+                <ul>
+                    <li>Special passholder events</li>
+                    <li>Early access to new attractions</li>
+                    <li>Discounts on Cosmic VIP Experiences</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="additional-info">
+            <h2>Additional Information</h2>
+            <ul>
+                <li>Prices subject to change during holidays and special events</li>
+                <li>Group rates available for parties of 15 or more</li>
+                <li>Keep an eye on our Promotional Deals section for limited-time offers!</li>
+            </ul>
+        </section>
+    </main>
+
     <footer>
-      <div class="footer-content">
-        <div>
-          <a href="#">Career Opportunities</a>
-          <a href="#">Rules and Regulations</a>
-          <a href="#">And more</a>
+        <div class="footer-content">
+            <nav>
+                <ul>
+                    <li><a href="careers.html">Career Opportunities</a></li>
+                    <li><a href="rules.html">Rules and Regulations</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for exclusive offers and updates!</p>
+                <form action="#" method="post">
+                    <label for="email" class="visually-hidden">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </div>
-        <div class="newsletter">
-          <p>Newsletter</p>
-          <form action="#">
-            <input type="text" placeholder="Enter your email" />
-            <input type="submit" value="Submit" />
-          </form>
+        <div class="copyright">
+            <p>&copy; 2024 Orbitland Theme Park. All rights reserved.</p>
         </div>
-      </div>
     </footer>
-  </body>
+    
+</body>
 </html>
