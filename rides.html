@@ -1,115 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styling/rides.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">Logo</div>
-      <div class="logo-text">Logo Text</div>
-      <nav>
-        <a href="homepage.html">Home</a>
-        <a href="rides.html">Attractions</a>
-        <a href="tickets.html">Tickets</a>
-        <a href="#" class="cart-icon">Cart icon</a>
-        <a href="#" class="search-icon">Search icon</a>
-      </nav>
-    </header>
+    <div class="container">
+      <div class="map">
+        <img src="assets/map.webp" alt="Theme Park Map" />
+      </div>
 
-    <br><br><br><br><br>
-    
-    <div class= "map">
-      <img src="images/map.jpeg" alt="Theme Park Map">
-    </div>
+      <section id="rides-section" class="row">
+        <div class="col-md-12 jurassic-ride">
+          <h2 class="ride-header">Jurassic Park</h2>
+        </div>
 
-    <div class="rides-area">
-      <section id="rides-section">
-        <div class="jurassic-ride">
-          <h2>Jurassic Park </h2>
-          <div class="jurassic-images">
-            <img src="#" alt="Jurassic Ride Image">
-            <img src="#" alt="Jurassic Ride Image">
-            <img src="#" alt="Jurassic Ride Image">
+          <div class="row carousel">
+          <div class="col-md-5">
+            <div class="ride-card">
+              <img
+                src="assets/rollercoaster.jpg"
+                alt="Jurassic Ride Image"
+                class="ride-image"
+              />
+              <div class="row">
+                <div class="col-md-3 ride-requirements">
+                  <div><span class="label">Age:</span></div>
+                  <div><span class="value">12+</span></div>
+                </div>
+                <div class="col-md-3 ride-requirements">
+                  <div><span class="label">Weight:</span></div>
+                  <div><span class="value">50KG+</span></div>
+                </div>
+                <div class="col-md-3 ride-requirements">
+                  <div><span class="label">Height:</span></div>
+                  <div><span class="value">1.4m+</span></div>
+                </div>
+                <div class="col-md-3 ride-requirements">
+                  <div><span class="label">Wait Time:</span></div>
+                  <div><span class="value">50</span></div>
+                </div>
+              </div>
+            </div>
           </div>
-            <h3>Roller Coaster</h3>
-          <p class="rides-desc">Jurassic Ride description</p>
-        </div>
-
-        <div class="jurassic-buttons">
-          <button>Prev</button>
-          <button>Next</button>
-        </div>
-
-        <div class="fantasy-land">
-          <h2>Fantasy Land </h2>
-          <div class="fantasy-images">
-            <img src="#" alt="Fantasy Land Image">
-            <img src="#" alt="Fantasy Land Image">
-            <img src="#" alt="Fantasy Land Image">
+          
+          <div class="col-md-5">
+            <div class="ride-card">
+              <img
+                src="assets/rollercoaster.jpg"
+                alt="Jurassic Ride Image"
+                class="ride-image"
+              />
+              <div class="row">
+                <div class="col-md-3 ride-requirements">
+                  <div><span class="label">Age:</span></div>
+                  <div><span class="value">12+</span></div>
+                </div>
+                <div class="col-md-3 ride-requirements">
+                  <div><span class="label">Weight:</span></div>
+                  <div><span class="value">50KG+</span></div>
+                </div>
+                <div class="col-md-3 ride-requirements">
+                  <div><span class="label">Height:</span></div>
+                  <div><span class="value">1.4m+</span></div>
+                </div>
+                <div class="col-md-3 ride-requirements">
+                  <div><span class="label">Wait Time:</span></div>
+                  <div><span class="value">50</span></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3>Roller Coaster</h3>
-          <p class="rides-desc">Fantasy Land description</p>
+          <div class="col-md-5">
+            <div class="ride-card">
+              <img
+                src="assets/rollercoaster.jpg"
+                alt="Jurassic Ride Image"
+                class="ride-image"
+              />
+              <div class="row">
+                <div class="col-md-3 ride-requirements">
+                  <div><span class="label">Age:</span></div>
+                  <div><span class="value">12+</span></div>
+                </div>
+                <div class="col-md-3 ride-requirements">
+                  <div><span class="label">Weight:</span></div>
+                  <div><span class="value">50KG+</span></div>
+                </div>
+                <div class="col-md-3 ride-requirements">
+                  <div><span class="label">Height:</span></div>
+                  <div><span class="value">1.4m+</span></div>
+                </div>
+                <div class="col-md-3 ride-requirements">
+                  <div><span class="label">Wait Time:</span></div>
+                  <div><span class="value">50</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="fantasy-buttons">
-          <button>Prev</button>
-          <button>Next</button>
-        </div>
+         
 
-        <div class="future-world">
-          <h2>Future World </h2>
-          <div class="future-images">
-            <img src="#" alt="Future World Image">
-            <img src="#" alt="Future World Image">
-            <img src="#" alt="Future World Image">
-          </div>          
-          <h3>Roller Coaster</h3>
-          <p class="rides-desc">Future World description</p>
-        </div>
-
-        <div class="future-buttons">
-          <button>Prev</button>
-          <button>Next</button>
-        </div>
-
-        <div class="wild-west">
-          <h2>Wild West </h2>
-          <div class="wild-images">
-            <img src="#" alt="Wild West Image">
-            <img src="#" alt="Wild West Image">
-            <img src="#" alt="Wild West Image">
-          </div>          
-          <h3>Roller Coaster</h3>
-          <p class="rides-desc">Wild West description</p>
-        </div>
-
-        <div class="wild-buttons">
-          <button>Prev</button>
-          <button>Next</button>
+          <div class="row display-center">
+            <div class="col-md-8 display-center text-center">
+              <h3 class="ride-name">Roller Coaster</h3>
+              <p class="rides-desc">
+                Jurassic Ride Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+              <div class="jurassic-buttons">
+                <button>Prev</button>
+                <button>Next</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
-    
-    <br><br><br><br><br>
-
-    <footer>
-      <div class="footer-content">
-        <div>
-          <a href="#">Career Opportunities</a>
-          <a href="#">Rules and Regulations</a>
-          <a href="#">And more</a>
-        </div>
-        <div class="newsletter">
-          <p>Newsletter</p>
-          <form action="#">
-            <input type="text" placeholder="Enter your email" />
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
