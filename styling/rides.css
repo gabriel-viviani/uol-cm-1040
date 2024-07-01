@@ -161,3 +161,35 @@
   -ms-overflow-style: -ms-autohiding-scrollbar;
   column-gap: 15px;
 }
+
+.attraction-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  column-gap: 30px;
+}
+.arrow-attraction-button {
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid #003049;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-attraction-button:hover {
+  background-color: #008080;
+  border: 1px solid #008080;
+  transition-duration: 300ms;
+  animation: ease-in-out;
+  cursor: pointer;
+}
+
+.arrow-attraction-button:hover .arrow-svg {
+  fill: #fff; /* Change this to the desired hover color */
+}
+
+.arrow-svg {
+  fill: #003049;
+}
