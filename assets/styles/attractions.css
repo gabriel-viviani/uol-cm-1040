@@ -128,7 +128,7 @@
   }
 }
 
-/* Image Styling */
+/* Image assets/styles */
 .map img {
   display: block;
   width: 100%;
@@ -141,7 +141,7 @@
   margin: 30px 0px;
 }
 
-.rides-desc {
+.attractions-desc {
   text-align: center;
   margin: 30px 0px;
 }
