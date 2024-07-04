@@ -36,6 +36,12 @@
     margin: auto;
 }
 
+#tickets-dropdown,
+#addons-dropdown {
+    width: 100%;
+    margin-right: 0px;
+}
+
 #newsletter {
     font-size: 80%;
     margin-bottom: 5px;
@@ -106,5 +112,63 @@ hr {
 @media only screen and (min-width: 568px) {
     .inv {
         display: none !important;
+    }
+}
+
+.ticket-picker {
+    top: 60%;
+    left: 25%;
+    position: absolute;
+    z-index: 9999;
+}
+.ticket-picker .container {
+    font-size: 100%;
+    text-align: center;
+    max-width: 50%;
+}
+.ticket-form {
+    background-color: #fafaf1;
+    border-radius: 7px 7px 0px 0px;
+    line-height: 4em;
+}
+.book-btn {
+    margin-top: 0.25em;
+    background: rgb(202, 60, 60) !important;
+    color: white !important;
+    margin-bottom: 0.58em;
+    line-height: 1.5em;
+}
+.center-input {
+    margin-top: 0.75em !important;
+    box-shadow: none !important;
+    border-color: #003049 !important;
+}
+#booking-text {
+    margin: 0 0 0 0;
+    background: #003049;
+    text-align: center;
+    border-radius: 0 0 7px 7px;
+}
+
+.container h1 {
+    font-size: 400%;
+    margin: 0;
+    color: white;
+}
+.container h2 {
+    font-size: 200%;
+    color: white;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .container h1 {
+        font-size: 230%;
+    }
+    .container h2 {
+        font-size: 150%;
+    }
+
+    .ticket-picker {
+        top: 15%;
     }
 }

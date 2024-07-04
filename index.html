@@ -109,36 +109,44 @@
             </li>
           </ul>
         </div>
-        <div class="pure-u-1 pure-u-md-1-4">
-          <div class="newsletter-container">
-            <h1 id="newsletter">Experience the Thrill</h1>
-            <h2 id="newsletter">
-              Dive into Excitement with our signature rides!
-            </h2>
-            <form class="pure-form pure-form-stacked">
-              <fieldset style="padding-bottom: 0">
-                <div class="pure-g">
-                  <div class="pure-u-3-4">
-                    <input
-                      type="email"
-                      class="pure-input-1"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div class="pure-u-1-4">
-                    <button
-                      type="submit"
-                      class="pure-button pure-button-primary"
-                    >
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </fieldset>
-            </form>
-            <p>
-              Opt out at any time by clicking the unsubscribe link included in
-              each of our emails.
+      </div>
+      <div class="ticket-picker pure-u-1 pure-md-1-1">
+        <div class="container">
+          <div class="pure-u-1">
+            <h1>Experience the Thrill</h1>
+            <h2>Dive into Excitement with our signature rides!</h2>
+          </div>
+          <form class="pure-form pure-form-stacked ticket-form">
+            <fieldset style="padding-bottom: 0">
+              <div class="pure-u-1 pure-u-md-1-4">
+                <select class="center-input" id="tickets-dropdown">
+                  <option>Select Tickets</option>
+                  <option>Child Pass</option>
+                  <option>Adult Pass</option>
+                  <option>Three Days -9</option>
+                  <option>Three Days +9</option>
+                </select>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-4">
+                <select class="center-input" id="addons-dropdown">
+                  <option>Select Add Ons</option>
+                  <option>Food+</option>
+                  <option>Fast Pass</option>
+                  <option>No Line</option>
+                  <option>Open Food</option>
+                </select>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-4">
+                <input class="center-input" type="date" name="ticket-day" />
+              </div>
+              <button type="submit" class="book-btn pure-button">
+                BOOK NOW
+              </button>
+            </fieldset>
+          </form>
+          <div class="pure-u-1">
+            <p id="booking-text">
+              &#127775; Booking is subject to availability and confirmation
             </p>
           </div>
         </div>
