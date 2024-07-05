@@ -12,6 +12,9 @@
     bottom: 0;
     width: 100%;
 }
+.footer p {
+    color: white;
+}
 #orbitland {
     font-size: 50% !important;
     margin: 7px 7px 0px 5px;
@@ -120,6 +123,9 @@ hr {
     left: 25%;
     position: absolute;
     z-index: 9999;
+}
+.ticket-picker p {
+    color: white;
 }
 .ticket-picker .container {
     font-size: 100%;
