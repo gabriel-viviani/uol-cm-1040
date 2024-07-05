@@ -200,11 +200,14 @@ p {
   margin: 0;
   line-height: 1.5em;
 }
-#haunted-card {
+
+#haunted-card,
+#finn-card,
+#acrobatics-card {
   width: 33%;
 }
 
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 1024px) {
   .open-h p strong {
     float: left;
   }
@@ -224,7 +227,9 @@ p {
   .card {
     padding: 0;
   }
-  #haunted-card {
+  #haunted-card,
+  #finn-card,
+  #acrobatics-card {
     width: 100%;
   }
 }
