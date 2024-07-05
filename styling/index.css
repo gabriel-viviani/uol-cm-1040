@@ -1,0 +1,264 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Acme";
+}
+
+body,
+p {
+  font-family: "Poppins";
+}
+
+/* Intro Area */
+
+.intro-area {
+  padding: 0em 2em 0em 2em;
+}
+
+.intro-area h1 {
+  font-size: 10em;
+  text-align: center;
+  color: #003049;
+  margin-bottom: 1em;
+  line-height: 1em;
+}
+
+#pure-food img {
+  border-radius: 10px 10px 10px 10px;
+}
+
+.intro-text {
+  margin: auto;
+  text-align: left;
+  justify-content: center;
+  padding-left: 3em;
+  padding: 0em 5em 0em 5em;
+  color: black;
+}
+
+.intro-text h3 {
+  font-size: 8em;
+  color: #003049;
+  line-height: 1em;
+}
+.intro-text strong {
+  float: right;
+}
+.open-h p {
+  font-size: 4em;
+}
+
+.pure-table {
+  width: 100%;
+}
+
+/* Zone Area */
+
+.zone-area {
+  position: relative;
+  margin-top: 10em;
+}
+.zone-area h1 {
+  font-size: 10em;
+  padding-left: 0.5em;
+  line-height: 1em;
+}
+
+.zone-grid {
+  text-align: center;
+  height: auto;
+}
+
+.zone-grid-item {
+  position: sticky;
+  overflow: hidden;
+  text-align: center;
+  height: 0;
+  padding: 50%;
+}
+
+.zone-grid-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+
+.zone-grid-item h3 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: white;
+  font-size: 9em;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 5px;
+  line-height: 1em;
+}
+
+.zone-grid-item hr {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 3px;
+  background-color: white;
+}
+
+.zone-grid-item p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 4em;
+  letter-spacing: 5px;
+}
+
+/* Food Section */
+.food-area {
+  padding: 0.5em 2em 0em 2em;
+  margin-top: 5em;
+}
+
+.food-area h1 {
+  text-align: left;
+  margin: 0.5em;
+  font-size: 10em;
+  color: #003049;
+  line-height: 1em;
+}
+
+.food-grid {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: fit-content;
+}
+
+.food-area img {
+  width: 100%;
+  height: 100em;
+  border-radius: 5em;
+  object-fit: cover;
+  padding: 1em 0em 1em 0em;
+}
+
+.food-text {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.food-desc {
+  padding: 7em 3em 0em 3em;
+}
+.food-desc p {
+  font-size: 6em;
+  line-height: 1em;
+}
+.food-desc h2 {
+  line-height: 1em;
+}
+
+.events-area h1 {
+  font-size: 8em;
+  line-height: 1em;
+  padding-left: 0.5em;
+}
+
+.events-area .pure-u-1 {
+  padding: 0em 3em 0em 3em;
+  text-align: center;
+  border: 1px;
+}
+.events-area img {
+  height: 70em;
+  width: 80%;
+  object-fit: cover;
+  margin: auto;
+}
+.events-area p {
+  padding: 0em 3em 0em 3em;
+}
+.card {
+  padding: 10em 10em 10em 10em;
+}
+.card .in {
+  box-shadow: 12px 12px 26px rgba(0, 0, 0, 0.48);
+  border-radius: 2em;
+  padding: 1em 0em 1em 0em;
+}
+.events-area h3 {
+  font-size: 5em;
+  margin: 0;
+  line-height: 1.5em;
+}
+#haunted-card {
+  width: 33%;
+}
+
+@media only screen and (max-width: 568px) {
+  .open-h p strong {
+    float: left;
+  }
+  .open-h p strong {
+    float: left;
+  }
+  .zone-grid-item h3 {
+    top: -7%;
+  }
+  .zone-grid-item hr {
+    top: 25%;
+    width: 50%;
+  }
+  .zone-grid-item p {
+    top: 25%;
+  }
+  .card {
+    padding: 0;
+  }
+  #haunted-card {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-height: 568px) {
+  .open-h p strong {
+    float: left;
+  }
+  .zone-grid-item h3 {
+    top: -7%;
+  }
+  .zone-grid-item hr {
+    top: 25%;
+    width: 50%;
+  }
+  .zone-grid-item p {
+    top: 25%;
+  }
+}
+@media only screen and (min-width: 568px) {
+  .open-h p strong {
+    float: right;
+  }
+  .zone-grid-item h3 {
+    top: 30%;
+  }
+  .zone-grid-item hr {
+    top: 40%;
+    width: 50%;
+  }
+  .zone-grid-item p {
+    top: 50%;
+  }
+  .card {
+    padding: 10em 10em 10em 10em;
+  }
+}
