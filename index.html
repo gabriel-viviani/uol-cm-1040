@@ -1,43 +1,46 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orbitland</title>
-    <link rel="stylesheet" href="/styling/navbar.css" />
-    <link rel="stylesheet" href="/styling/carousel.css" />
-    <link rel="stylesheet" href="/styling/homepage.css" />
-    <link rel="stylesheet" href="/styling/main.css" />
-    <link rel="stylesheet" href="/styling/index.css" />
-
-    <link rel="icon" href="/images/favicon.png" />
+    <!-- link css-->
+    <link rel="stylesheet" href="/styling/navbar.css">
+    <link rel="stylesheet" href="/styling/carousel.css">
+    <link rel="stylesheet" href="/styling/homepage.css">
+    <link rel="stylesheet" href="/styling/main.css">
+    <link rel="stylesheet" href="/styling/index.css">
+    <link rel="icon" href="/images/favicon.png">
 
     <!-- pure css-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
-    />
-    <link rel="stylesheet" href="/styling/grids-responsive-min.css" />
+    >
+    <link rel="stylesheet" href="/styling/grids-responsive-min.css">
   </head>
   <body>
     <div class="header">
+      <!-- Logo + Title -->
       <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
         <img
           class="pure-menu-heading pure-img-responsive"
           src="/images/park-logo.png"
           alt="Orbitland Logo"
-        />
+        >
         <a href="index.html" class="pure-menu-heading title">Orbitland</a>
 
         <ul class="pure-menu-list">
+          <!-- Navigation Links -->
           <li class="pure-menu-item">
-            <a href="rides.html" class="pure-menu-link">Attractions</a>
+            <a href="attractions.html" class="pure-menu-link">Attractions</a>
           </li>
           <li class="pure-menu-item">
-            <a href="#" class="pure-menu-link">Tickets</a>
+            <a href="tickets.html" class="pure-menu-link">Tickets</a>
           </li>
+          <!-- Cart Icon -->
           <li class="pure-menu-item">
-            <a href="" class="pure-menu-link cart-icon">
+            <a href="tickets.html" class="pure-menu-link cart-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                 <path
                   d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
@@ -46,8 +49,12 @@
               </svg>
             </a>
           </li>
+          <!-- Search Icon -->
           <li class="pure-menu-item">
-            <a href="" class="pure-menu-link search-icon">
+            <a
+              href="http://www.google.com/search?q=Orbitland"
+              class="pure-menu-link search-icon"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path
                   d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
@@ -59,16 +66,18 @@
         </ul>
       </div>
     </div>
-
+    
     <div class="splash-container">
       <div class="splash">
         <div class="carousel">
+          <!-- Create Slideshow -->
           <ul class="slides">
-            <input type="radio" name="radio-buttons" id="img-1" checked />
+            <input type="radio" name="radio-buttons" id="img-1" checked>
             <li class="slide-container">
               <div class="slide-image">
-                <img src="images/carousel.jpeg" alt="Carousel Banner" />
+                <img src="images/carousel.jpeg" alt="Carousel Banner">
               </div>
+              <!-- Control Slideshow -->
               <div class="carousel-controls">
                 <label for="img-3" class="prev-slide">
                   <span>&lsaquo;</span>
@@ -78,13 +87,16 @@
                 </label>
               </div>
             </li>
-            <input type="radio" name="radio-buttons" id="img-2" />
+            <!-- Slideshow Buttons Image 2-->
+            <input type="radio" name="radio-buttons" id="img-2">
             <li class="slide-container">
               <div class="slide-image">
                 <img
                   src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true"
-                />
+                  alt="Slider Image"
+                >
               </div>
+              <!-- Control Slideshow Image 2-->
               <div class="carousel-controls">
                 <label for="img-1" class="prev-slide">
                   <span>&lsaquo;</span>
@@ -94,13 +106,16 @@
                 </label>
               </div>
             </li>
-            <input type="radio" name="radio-buttons" id="img-3" />
+            <!-- Slideshow Buttons Image 3-->
+            <input type="radio" name="radio-buttons" id="img-3">
             <li class="slide-container">
               <div class="slide-image">
                 <img
                   src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg"
-                />
+                  alt="Slide Image 2"
+                >
               </div>
+              <!-- Control Slideshow Image 3-->
               <div class="carousel-controls">
                 <label for="img-2" class="prev-slide">
                   <span>&lsaquo;</span>
@@ -113,8 +128,10 @@
           </ul>
         </div>
       </div>
+      <!-- Create Ticket Picker -->
       <div class="ticket-picker pure-u-1 pure-md-1-1">
         <div class="container">
+          <!-- Title -->
           <div class="pure-u-1">
             <h1>Experience the Thrill</h1>
             <h2>Dive into Excitement with our signature rides!</h2>
@@ -122,6 +139,7 @@
           <form class="pure-form pure-form-stacked ticket-form">
             <fieldset style="padding-bottom: 0">
               <div class="pure-u-1 pure-u-md-1-4">
+                <!-- Tickets Dropdown -->
                 <select class="center-input" id="tickets-dropdown">
                   <option>Select Tickets</option>
                   <option>Child Pass</option>
@@ -131,6 +149,7 @@
                 </select>
               </div>
               <div class="pure-u-1 pure-u-md-1-4">
+                <!-- Add Ons Dropdown -->
                 <select class="center-input" id="addons-dropdown">
                   <option>Select Add Ons</option>
                   <option>Food+</option>
@@ -140,7 +159,8 @@
                 </select>
               </div>
               <div class="pure-u-1 pure-u-md-1-4">
-                <input class="center-input" type="date" name="ticket-day" />
+                <!-- Date Picker -->
+                <input class="center-input" type="date" name="ticket-day">
               </div>
               <button type="submit" class="book-btn pure-button">
                 BOOK NOW
@@ -148,6 +168,7 @@
             </fieldset>
           </form>
           <div class="pure-u-1">
+            <!-- Bottom Text -->
             <p id="booking-text">
               &#127775; Booking is subject to availability and confirmation
             </p>
@@ -158,204 +179,279 @@
 
     <div class="content-wrapper pure-g">
       <div class="content">
-
-
+        <!-- Introduction Area -->
         <div class="intro-area">
           <h1>Orbitland Awaits!</h1>
           <section id="intro-section" class="pure-g">
             <div class="pure-u-1 pure-u-md-1-2" id="pure-food">
-                <img class="pure-img" src="assets/intro-image.webp" alt="Intro Image"/>
+              <!-- Image -->
+              <img
+                class="pure-img"
+                src="assets/intro-image.webp"
+                alt="Intro Image"
+              >
             </div>
             <div class="pure-u-1 pure-u-md-1-2">
-                  <div class="intro-text">
-                    <h3>Travel Through Time and Thrills!</h3>
-                    <p>
-                      A world of suspense, laughter, knowledge, and entertainment
-                      awaits! Join us at Orbitland, where we take you on a ride through
-                      eras past and future for maximum awe and enjoyment. Whether to see
-                      the dinosaurs in their natural habitat or to be in the thick of a
-                      futuristic battle for our planet, Orbitland is sure to bring
-                      unforgettable memories to everyone!
-                    </p>
-                    <h3>Opening Hours</h3>
-                    <div class="pure-u-1 pure-u-md-2-2 open-h">
-                      <p class="pure-u-1 pure-u-md-1-2">Sunday - Thursday</p>
-                      <p class="pure-u-1 pure-u-md-1-3"><strong> 8 AM - 10 PM</strong></p>
-                    </div>
-                    <div class="pure-u-1 pure-u-md-2-2 open-h">
-                      <p class="pure-u-1 pure-u-md-1-2">Friday - Saturday</p>
-                      <p class="pure-u-1 pure-u-md-1-3"><strong>8 AM - 12 AM</strong></p>
-                    </div>
-                    <div class="pure-u-1 pure-u-md-2-2 open-h">
-                      <p class="pure-u-1 pure-u-md-1-2">Public Holidays (Day Before & During)</p>
-                      <p class="pure-u-1 pure-u-md-1-3"><strong>8 AM - 12 AM</strong></p>
-                    </div>
+              <!-- Description -->
+              <div class="intro-text">
+                <h3>Travel Through Time and Thrills!</h3>
+                <p>
+                  A world of suspense, laughter, knowledge, and entertainment
+                  awaits! Join us at Orbitland, where we take you on a ride
+                  through eras past and future for maximum awe and enjoyment.
+                  Whether to see the dinosaurs in their natural habitat or to be
+                  in the thick of a futuristic battle for our planet, Orbitland
+                  is sure to bring unforgettable memories to everyone!
+                </p>
+                <!-- Opening Times -->
+                <h3>Opening Hours</h3>
+                <div class="pure-u-1 pure-u-md-2-2 open-h">
+                  <p class="pure-u-1 pure-u-md-1-2">Sunday - Thursday</p>
+                  <p class="pure-u-1 pure-u-md-1-3">
+                    <strong> 8 AM - 10 PM</strong>
+                  </p>
+                </div>
+                <div class="pure-u-1 pure-u-md-2-2 open-h">
+                  <p class="pure-u-1 pure-u-md-1-2">Friday - Saturday</p>
+                  <p class="pure-u-1 pure-u-md-1-3">
+                    <strong>8 AM - 12 AM</strong>
+                  </p>
+                </div>
+                <div class="pure-u-1 pure-u-md-2-2 open-h">
+                  <p class="pure-u-1 pure-u-md-1-2">
+                    Public Holidays (Day Before & During)
+                  </p>
+                  <p class="pure-u-1 pure-u-md-1-3">
+                    <strong>8 AM - 12 AM</strong>
+                  </p>
+                </div>
               </div>
             </div>
           </section>
         </div>
 
-
+        <!-- Zone Section -->
         <div class="zone-area">
           <h1>Explore Our Zones</h1>
           <section id="zone-section" class="pure-g">
             <div class="pure-u-1 pure-u-md-1-2 zone-grid" id="pure-zone">
-                <article class="zone-grid-item">
-                  <img class="pure-img" src="/assets/jurassic-park.jpeg" alt="Jurassic Park Image" />
-                  <h3>Jurassic Park</h3>
-                  <hr>
-                  <p class="zone-desc">
-                    Soar above the treetops on our DinoFlyer coaster, offering
-                    thrilling views and close encounters with these majestic
-                    prehistoric beasts.
-                  </p>
-                </div>
+              <!-- Top Left Grid -->
+              <article class="zone-grid-item">
+                <img
+                  class="pure-img"
+                  src="/assets/jurassic-park.jpeg"
+                  alt="Jurassic Park Image"
+                >
+                <h3>Jurassic Park</h3>
+                <hr>
+                <p class="zone-desc">
+                  Soar above the treetops on our DinoFlyer coaster, offering
+                  thrilling views and close encounters with these majestic
+                  prehistoric beasts.
+                </p>
+              </article>
+            </div>
 
             <div class="pure-u-1 pure-u-md-1-2 zone-grid" id="pure-zone">
-                </article>
-                <article class="zone-grid-item">
-                  <img class="pure-img" src="assets/fantasy-land.jpeg" alt="Fantasy Land Image" />
-                  <h3>Fantasy Land</h3>
-                  <hr>
-                  <p class="zone-desc">
-                    Revel in the illuminated beauty of the Elven kingdom during our
-                    enchanted night rides, where the park comes alive with magical
-                    light displays.
-                  </p>
-                </article>
+              <!-- Top Right Grid -->
+              <article class="zone-grid-item">
+                <img
+                  class="pure-img"
+                  src="assets/fantasy-land.jpeg"
+                  alt="Fantasy Land Image"
+                >
+                <h3>Fantasy Land</h3>
+                <hr>
+                <p class="zone-desc">
+                  Revel in the illuminated beauty of the Elven kingdom during
+                  our enchanted night rides, where the park comes alive with
+                  magical light displays.
+                </p>
+              </article>
+            </div>
+
+            <div class="pure-u-1 pure-u-md-1-2 zone-grid" id="pure-zone">
+              <!-- Bottom Left Grid -->
+              <article class="zone-grid-item">
+                <img
+                  class="pure-img"
+                  src="assets/future-world.jpeg"
+                  alt="Future World Image"
+                >
+                <h3>Future World</h3>
+                <hr>
+                <p class="zone-desc">
+                  Join the resistance and navigate through chaotic cityscapes in
+                  our RoboRush roller coaster, where every twist and turn
+                  escalates the adrenaline rush.
+                </p>
+              </article>
             </div>
             <div class="pure-u-1 pure-u-md-1-2 zone-grid" id="pure-zone">
-                <article class="zone-grid-item">
-                  <img class="pure-img" src="assets/future-world.jpeg" alt="Future World Image" />
-                  <h3>Future World</h3>
-                  <hr>
-                  <p class="zone-desc">
-                    Join the resistance and navigate through chaotic cityscapes in
-                    our RoboRush roller coaster, where every twist and turn
-                    escalates the adrenaline rush.
-                  </p>
-                </article>
+              <!-- Bottom Right Grid -->
+              <article class="zone-grid-item">
+                <img
+                  class="pure-img"
+                  src="assets/wild-west.jpeg"
+                  alt="Wild West Image"
+                >
+                <h3>Wild West</h3>
+                <hr>
+                <p class="zone-desc">
+                  Gallop into the sunset on our Gold Rush Express, where each
+                  ride tells a tale of fortune and peril in the rugged frontier.
+                </p>
+              </article>
             </div>
-            <div class="pure-u-1 pure-u-md-1-2 zone-grid" id="pure-zone">
-                <article class="zone-grid-item">
-                  <img class="pure-img" src="assets/wild-west.jpeg" alt="Wild West Image" />
-                  <h3>Wild West</h3>
-                  <hr>
-                  <p class="zone-desc">
-                    Gallop into the sunset on our Gold Rush Express, where each ride
-                    tells a tale of fortune and peril in the rugged frontier.
-                  </p>
-                </article>
           </section>
         </div>
 
+        <!-- Food Section -->
         <div class="food-area">
           <h1>Satisfy Your Cravings</h1>
           <section id="food-zone" class="pure-g">
+            <!-- First Food Image + Description -->
             <div class="pure-u-1 pure-u-md-1-2" id="pure-food">
-                <img class="pure-img" src="assets/garden-grille.jpeg" alt="Garden Grille Image" />
+              <img
+                class="pure-img"
+                src="assets/garden-grille.jpeg"
+                alt="Garden Grille Image"
+              >
             </div>
             <div class="pure-u-1 pure-u-md-1-2 food-desc">
-                  <h2>Garden Grille</h2>
-                  <p>
-                    Nestled within Fantasy World, Garden Grille serves enchanting
-                    garden-to-table dishes sourced from the magical surroundings.
-                    Here, guests can relax in a whimsical setting and enjoy fresh
-                    flavors that bring fairy tales to life. It's a perfect retreat
-                    for families seeking a serene dining experience.
-                  </p>
+              <h2>Garden Grille</h2>
+              <p>
+                Nestled within Fantasy World, Garden Grille serves enchanting
+                garden-to-table dishes sourced from the magical surroundings.
+                Here, guests can relax in a whimsical setting and enjoy fresh
+                flavors that bring fairy tales to life. It's a perfect retreat
+                for families seeking a serene dining experience.
+              </p>
             </div>
+            <!-- Second Food Image + Description -->
             <div class="pure-u-1 pure-u-md-1-2" id="future-food">
-                <img class="pure-img" src="assets/trattoria-moderna.jpeg" alt="Trattoria Moderna Image" />
+              <img
+                class="pure-img"
+                src="assets/trattoria-moderna.jpeg"
+                alt="Trattoria Moderna Image"
+              >
             </div>
             <div class="pure-u-1 pure-u-md-1-2 food-desc">
-                  <h2>Trattoria Moderna</h2>
-                  <p >
-                    Trattoria Moderna offers a sleek take on classic Italian cuisine
-                    with a modern twist. As robots attend to details, diners can
-                    enjoy innovative meals that blend tradition with tomorrow’s
-                    culinary trends. This restaurant is a must-visit for those
-                    exploring the innovations of Future World.
-                  </p>
-             </div>
+              <h2>Trattoria Moderna</h2>
+              <p>
+                Trattoria Moderna offers a sleek take on classic Italian cuisine
+                with a modern twist. As robots attend to details, diners can
+                enjoy innovative meals that blend tradition with tomorrow’s
+                culinary trends. This restaurant is a must-visit for those
+                exploring the innovations of Future World.
+              </p>
+            </div>
+            <!-- Third Food Image + Description -->
             <div class="pure-u-1 pure-u-md-1-2" id="west-food">
-              <img class="pure-img" src="assets/ocean-catch.jpg" alt="Ocean's Catch Image" />
+              <img
+                class="pure-img"
+                src="assets/ocean-catch.jpg"
+                alt="Ocean's Catch Image"
+              >
             </div>
             <div class="pure-u-1 pure-u-md-1-2 food-desc">
-                <h2>Ocean's Catch</h2>
-                <p>
-                  Set against the rugged backdrop of Wild West, Ocean's Catch
-                  brings a taste of the sea to this frontier setting. Guests can
-                  indulge in freshly caught ocean-to-table specialties as they
-                  soak in the old-western atmosphere. It's the ideal spot for
-                  adventurers looking to refuel with hearty, maritime fare.
-                </p>
+              <h2>Ocean's Catch</h2>
+              <p>
+                Set against the rugged backdrop of Wild West, Ocean's Catch
+                brings a taste of the sea to this frontier setting. Guests can
+                indulge in freshly caught ocean-to-table specialties as they
+                soak in the old-western atmosphere. It's the ideal spot for
+                adventurers looking to refuel with hearty, maritime fare.
+              </p>
             </div>
+            <!-- Fourth Food Image + Description -->
             <div class="pure-u-1 pure-u-md-1-2" id="jurassic-food">
-              <img class="pure-img" src="assets/fusion-fire.jpg" alt="Fusion Fire Image" />
+              <img
+                class="pure-img"
+                src="assets/fusion-fire.jpg"
+                alt="Fusion Fire Image"
+              >
             </div>
             <div class="pure-u-1 pure-u-md-1-2 food-desc">
-                  <h2>Fusion Fire</h2>
-                  <p>
-                    Deep in the heart of Jurassic Park, Fusion Fire ignites palates
-                    with a daring mix of Asian and Latin flavors. This eatery offers
-                    a thrilling dining adventure where prehistoric ambiance meets
-                    contemporary cuisine. It's an explosive culinary experience for
-                    bold explorers of the park.
-                  </p>
+              <h2>Fusion Fire</h2>
+              <p>
+                Deep in the heart of Jurassic Park, Fusion Fire ignites palates
+                with a daring mix of Asian and Latin flavors. This eatery offers
+                a thrilling dining adventure where prehistoric ambiance meets
+                contemporary cuisine. It's an explosive culinary experience for
+                bold explorers of the park.
+              </p>
             </div>
           </section>
         </div>
-
+        
+        <!-- Events Section -->
         <div class="events-area">
-          <h1 style="text-align:center">Ongoing Events</h1>
-            <div class="pure-u-1 pure-u-md-1-3">
-              <div class="card">
+          <h1 style="text-align: center">Ongoing Events</h1>
+          <!-- First Event -->
+          <div class="pure-u-1 pure-u-md-1-3" id="acrobatics-card">
+            <div class="card">
               <div class="in">
-              <img class="pure-img" src="/assets/acrobatics-event.jpg" alt="Acrobatics Image" />
-              <h3>Acrobatics</h3>
-              <p class="event-date">27th June 2024 - 28th July, 2024</p>
-              <p class="event-desc">
-                Join us for a mesmerizing display of acrobatics, where
-                performers defy gravity and dazzle with their amazing aerial
-                feats.
-              </p>
+                <img
+                  class="pure-img"
+                  src="/assets/acrobatics-event.jpg"
+                  alt="Acrobatics Image"
+                >
+                <h3>Acrobatics</h3>
+                <p class="event-date">27th June 2024 - 28th July, 2024</p>
+                <p class="event-desc">
+                  Join us for a mesmerizing display of acrobatics, where
+                  performers defy gravity and dazzle with their amazing aerial
+                  feats.
+                </p>
               </div>
+            </div>
+          </div>
+          <!-- Second Event -->
+          <div class="pure-u-1 pure-u-md-1-3" id="finn-card">
+            <div class="card">
+              <div class="in">
+                <img
+                  class="pure-img"
+                  src="/assets/finn-image.jpg"
+                  alt="Finn Image"
+                >
+                <h3>Finn the Dolphin</h3>
+                <p class="event-date">27th April 2024 - 28th July, 2024</p>
+                <p class="event-desc">
+                  Come see Finn the Dolphin in action as he leaps and splashes
+                  in a delightful display of aquatic agility that's fun for the
+                  whole family.
+                </p>
               </div>
             </div>
-            <div class="pure-u-1 pure-u-md-1-3">
-              <div class="card">
+          </div>
+          <!-- Third Event -->
+          <div class="pure-u-1 pure-u-md-1-3" id="haunted-card">
+            <div class="card">
               <div class="in">
-              <img class="pure-img" src="/assets/finn-image.jpg" alt="Finn Image" />
-              <h3>Finn the Dolphin</h3>
-              <p class="event-date">27th April 2024 - 28th July, 2024</p>
-              <p class="event-desc">
-                Come see Finn the Dolphin in action as he leaps and splashes in
-                a delightful display of aquatic agility that's fun for the whole
-                family.
-              </p>
+                <img
+                  class="pure-img"
+                  src="/assets/haunted-house.jpg"
+                  alt="Haunted House Image"
+                >
+                <h3>Haunted House</h3>
+                <p class="event-date">27th June 2024 - 28th July, 2024</p>
+                <p class="event-desc">
+                  Step into our Haunted House for a thrilling journey through
+                  ghostly tales and eerie encounters that promise to be both
+                  spooky and fun.
+                </p>
+              </div>
             </div>
-            </div>
-            </div>
-            <div class="pure-u-1 pure-u-md-1-3" id="haunted-card">
-              <div class="card">
-              <div class="in">
-              <img class="pure-img" src="/assets/haunted-house.jpg" alt="Haunted House Image" />
-              <h3>Haunted House</h3>
-              <p class="event-date">27th June 2024 - 28th July, 2024</p>
-              <p class="event-desc">
-                Step into our Haunted House for a thrilling journey through
-                ghostly tales and eerie encounters that promise to be both
-                spooky and fun.
-              </p>
-            </div>
-            </div>
-            </div>
+          </div>
         </div>
 
+        <!-- FAQ Section -->
         <div class="faq-area">
           <section id="faq">
             <h2>Frequently Asked Questions</h2>
+            <!-- Accordion -->
             <details>
               <summary>What safety measures are in place at Orbitland?</summary>
               <p>
@@ -382,61 +478,70 @@
           </section>
         </div>
       </div>
+
+      <!-- Footer -->
       <div class="footer">
         <p id="orbitland">ORBITLAND</p>
-        <hr />
+        <hr>
         <div class="pure-u-1 pure-u-md-1-8">
           <img
             class="pure-img-responsive logo"
             src="/images/white-logo.svg"
             alt="Orbitland Logo"
-          />
+          >
         </div>
         <div class="pure-u-1 pure-u-md-1-5">
+          <!-- Footer Left Links -->
           <ul class="pure-menu-list">
             <li class="pure-menu-item">
-              <a href="#" class="pure-menu-link">Home &#9756;</a>
+              <a href="index.html" class="pure-menu-link">Home &#9756;</a>
             </li>
             <li class="pure-menu-item">
-              <a href="#" class="pure-menu-link">Attractions &#9756;</a>
+              <a href="attractions.html" class="pure-menu-link"
+                >Attractions &#9756;
+              </a>
             </li>
             <li class="pure-menu-item">
-              <a href="#" class="pure-menu-link">Tickets &#9756;</a>
+              <a href="tickets.html" class="pure-menu-link">Tickets &#9756;</a>
             </li>
           </ul>
         </div>
-        <hr class="inv" />
+        <hr class="inv">
         <div class="pure-u-1 pure-u-md-1-3">
+          <!-- Footer Center Links -->
           <ul class="small-info pure-menu-list">
             <li class="pure-menu-item">
-              <a href="#" class="pure-menu-link">Careers</a>
+              <a href="https://www.indeed.com/jobs?q=Orbitland&" class="pure-menu-link">Careers</a>
             </li>
             <li class="pure-menu-item">
-              <a href="#" class="pure-menu-link">Rules & Regulations</a>
+              <a href="https://www.iaapa.org/amusement-ride-safety/regulations-standards" class="pure-menu-link">Rules & Regulations</a>
             </li>
             <li class="pure-menu-item">
-              <a href="#" class="pure-menu-link">Policies</a>
+              <a href="https://www.iaapa.org/amusement-ride-safety/amusement-ride-safety-tips" class="pure-menu-link">Policies</a>
             </li>
             <li class="pure-menu-item">
-              <a href="#" class="pure-menu-link">Contact</a>
+              <a href="https://www.iaapa.org/contact-us" class="pure-menu-link">Contact</a>
             </li>
           </ul>
         </div>
-        <hr class="inv" />
+        <hr class="inv">
         <div class="pure-u-1 pure-u-md-1-4">
+          <!-- Newsletter -->
           <div class="newsletter-container">
             <h2 id="newsletter">SIGN UP TO NEWSLETTER</h2>
             <form class="pure-form">
               <fieldset style="padding-bottom: 0">
                 <div class="pure-g">
                   <div class="pure-u-3-4">
+                    <!-- Input Box -->
                     <input
                       type="email"
                       class="pure-input-1"
                       placeholder="Email"
-                    />
+                    >
                   </div>
                   <div class="pure-u-1-4">
+                    <!-- Submit Button -->
                     <button
                       type="submit"
                       class="pure-button pure-button-primary"
@@ -454,7 +559,8 @@
           </div>
         </div>
         <div class="pure-u-1">
-          <hr />
+          <!-- Copyright -->
+          <hr>
           <div class="pure-u-1 pure-u-md-1-2">
             <p id="copyright">&copy; COPYRIGHT 2024 Orbitland</p>
           </div>
