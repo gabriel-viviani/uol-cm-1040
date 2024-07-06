@@ -228,19 +228,19 @@ body {
 }
 
 .jurassic-ride {
-  color: #ff8a00;
+  color: #ff8a00 !important;
 }
 
 .fantasy-land {
-  color: #329b00;
+  color: #329b00 !important;
 }
 
 .future-world {
-  color: #1400ff;
+  color: #1400ff !important;
 }
 
 .wild-west {
-  color: #ff4c00;
+  color: #ff4c00 !important;
 }
 
 .ride-header {
@@ -297,7 +297,7 @@ body {
 }
 
 .fantasy-land h2 {
-  color: green;
+  color: green !important;
   text-align: center;
   font-size: 120px;
 }
@@ -315,7 +315,7 @@ body {
 }
 
 .future-world h2 {
-  color: blue;
+  color: blue !important;
   text-align: center;
   font-size: 120px;
 }
@@ -333,7 +333,7 @@ body {
 }
 
 .wild-west h2 {
-  color: rgb(248, 97, 37);
+  color: rgb(248, 97, 37) !important;
   text-align: center;
   font-size: 120px;
 }
