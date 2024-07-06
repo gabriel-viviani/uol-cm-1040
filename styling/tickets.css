@@ -1,346 +1,172 @@
 /* Reset and base styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Removes default margins from all elements */
+    padding: 0; /* Removes default padding from all elements */
+    box-sizing: border-box; /* Includes padding and border in element's total width and height calculation */
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif; /* Sets the default font for the entire page to Arial, with sans-serif as a fallback */
+    line-height: 1.6; /* Sets the line height to 1.6 times the font size for better readability */
+    color: #333; /* Sets the default text color to a dark gray */
+    background-color: #f4f4f4; /* Sets the background color for the entire page to a light gray */
 }
 
 /* Header styles */
-header {
-    background-color: #003049;
-    color: #fff;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo-container {
-    display: flex;
-    align-items: center;
+    display: flex; /* Uses flexbox for layout of the logo container */
+    align-items: center; /* Vertically centers items within the logo container */
 }
 
 .logo {
-    width: 50px;
-    height: auto;
-    margin-right: 1rem;
+    width: 50px; /* Sets the width of the logo to 50 pixels */
+    height: auto; /* Allows the height to adjust proportionally to the width */
+    margin-right: 1rem; /* Adds space to the right of the logo */
 }
 
 .logo-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    margin: 0 auto;  
-}
-
-nav ul li {
-    margin: 0 1.5rem;  
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 1.1rem;  
-    text-align: center;
-}
-
-nav ul li a:hover {
-    color: #ffd54f;
+    font-size: 1.5rem; /* Sets font size for the logo text to 1.5 times the root element's font size */
+    font-weight: bold; /* Makes the logo text bold */
 }
 
 .action-icons {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: flex; /* Uses flexbox for layout of action icons */
+    justify-content: flex-end; /* Aligns items to the right of the container */
+    align-items: center; /* Vertically centers items within the container */
 }
 
 .cart-icon, .search-icon {
-    font-size: 1.2rem;
-    margin-left: 1rem;
-    cursor: pointer;
+    font-size: 1.2rem; /* Sets font size for icons to 1.2 times the root element's font size */
+    margin-left: 1rem; /* Adds space to the left of each icon */
+    cursor: pointer; /* Changes cursor to pointer on hover, indicating clickability */
 }
-
 
 /* Main content styles */
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    max-width: 1200px; /* Sets a maximum width for the main content */
+    margin: 0 auto; /* Centers the main content horizontally */
+    padding: 2rem; /* Adds space around the main content */
 }
 
 section {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-bottom: 2rem;
-    padding: 2rem;
+    background-color: #fff; /* Sets background color of sections to white */
+    border-radius: 8px; /* Rounds the corners of the sections */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
+    margin-bottom: 2rem; /* Adds space below each section */
+    padding: 2rem; /* Adds space inside each section */
 }
 
 h1, h2, h3 {
-    color: #1a237e;
-    margin-bottom: 1rem;
+    color: #1a237e; /* Sets color of headings to a dark blue */
+    margin-bottom: 1rem; /* Adds space below headings */
 }
 
+/* Grid layout for ticket options and other sections */
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    display: grid; /* Uses CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates a responsive grid layout */
+    gap: 2rem; /* Adds space between grid items */
 }
 
 .grid-item {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
-    align-items: stretch;
+    background-color: #fff; /* Sets background color of grid items to white */
+    border-radius: 8px; /* Rounds the corners of grid items */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
+    overflow: hidden; /* Hides any content that exceeds the grid item's dimensions */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    display: flex; /* Uses flexbox for internal layout */
+    flex-direction: column; /* Stacks flex items vertically */
+    height: 100%; /* Ensures all grid items have the same height */
+    justify-content: space-between; /* Distributes space between flex items */
+    align-items: stretch; /* Stretches flex items to fill the container width */
 }
 
 .grid-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Slight lift effect on hover */
 }
 
+/* Styles for images within grid items */
 .grid-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    width: 100%; /* Makes the image fill the width of its container */
+    height: 200px; /* Sets a fixed height for images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
 }
 
+/* Styles for headings and paragraphs within grid items */
 .grid-item h2, .grid-item h3 {
-    font-size: 1.2rem;
-    padding: 1rem;
+    font-size: 1.2rem; /* Sets font size for headings within grid items */
+    padding: 1rem; /* Adds space around headings */
 }
 
 .grid-item p {
-    padding: 0 1rem;
-    flex-grow: 1;
+    padding: 0 1rem; /* Adds horizontal padding to paragraphs */
+    flex-grow: 1; /* Allows paragraphs to grow and fill available space */
 }
 
+/* Styles for price display */
 .price {
-    font-weight: bold;
-    color: #4caf50;
-    font-size: 1.2rem;
-    padding: 0 1rem 1rem;
-    align-self: flex-end;
-    min-height: 0px;
-    max-height: 30px;
+    font-weight: bold; /* Makes the price text bold */
+    color: #4caf50; /* Sets the price color to green */
+    font-size: 1.2rem; /* Sets the font size for prices */
+    padding: 0 1rem 1rem; /* Adds padding around prices */
+    align-self: flex-end; /* Aligns the price to the bottom of its container */
+    min-height: 0px; /* Sets minimum height to 0 */
+    max-height: 30px; /* Sets maximum height to 30 pixels */
 }
 
+/* Styles for "Buy Now" buttons */
 .buy-now {
-    display: block;
-    background-color: #ffd54f;
-    color: #1a237e;
-    text-align: center;
-    padding: 0.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    margin-top: auto;
+    display: block; /* Makes the button a block-level element */
+    background-color: #ffd54f; /* Sets the button background color to yellow */
+    color: #1a237e; /* Sets the button text color to dark blue */
+    text-align: center; /* Centers the text within the button */
+    padding: 0.5rem; /* Adds space inside the button */
+    text-decoration: none; /* Removes the default underline from the link */
+    font-weight: bold; /* Makes the button text bold */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: auto; /* Pushes the button to the bottom of the grid item */
 }
 
 .buy-now:hover {
-    background-color: #ffb300;
+    background-color: #ffb300; /* Changes button color on hover */
 }
 
+/* Styles for additional notes */
 .note {
-    font-style: italic;
-    margin-top: 1rem;
+    font-style: italic; /* Makes the note text italic */
+    margin-top: 1rem; /* Adds space above notes */
 }
 
-/* Pass benefits styles */
+/* Styles for pass benefits section */
 .pass-benefits {
-    background-color: #e8eaf6;
-    border-radius: 8px;
-    padding: 1rem;
-    margin-top: 2rem;
+    background-color: #e8eaf6; /* Sets background color for pass benefits section */
+    border-radius: 8px; /* Rounds the corners of the pass benefits section */
+    padding: 1rem; /* Adds space inside the pass benefits section */
+    margin-top: 2rem; /* Adds space above the pass benefits section */
 }
 
 .pass-benefits ul {
-    list-style-type: none;
+    list-style-type: none; /* Removes default list bullet points */
+    color: black; /* Sets text color to black */
 }
 
 .pass-benefits li:before {
-    content: "✓";
-    color: #4caf50;
-    margin-right: 0.5rem;
+    content: "✓"; /* Adds a checkmark before each list item */
+    color: #4caf50; /* Sets the checkmark color to green */
+    margin-right: 0.5rem; /* Adds space to the right of the checkmark */
 }
 
-/* Additional info styles */
+/* Styles for additional info section */
 .additional-info ul {
-    list-style-type: none;
+    list-style-type: none; /* Removes default list bullet points */
+    color: black; /* Sets text color to black */
+    margin-top: 2rem; /* Adds space above the list */
 }
 
 .additional-info li:before {
-    content: "•";
-    color: #1a237e;
-    margin-right: 0.5rem;
+    content: "•"; /* Adds a bullet point before each list item */
+    color: #1a237e; /* Sets the bullet point color to dark blue */
+    margin-right: 0.5rem; /* Adds space to the right of the bullet point */
 }
 
-/* Footer styles */
-footer {
-    background-color: #003049;
-    color: #fff;
-    padding: 2rem;
-  }
-  
-  .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footer-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-  }
-  
-  .footer-logo h2 {
-    font-size: 1rem;
-    margin: 0 0 0.5rem 0;
-    font-weight: 100;
-    color: #fff;
-  }
-  
-  .footer-logo .logo {
-    width: 50px;
-  }
-  
-  .footer-links {
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .footer-nav ul, .footer-secondary-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-nav ul li, .footer-secondary-nav ul li {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-  }
-  
-  .footer-nav ul li a, .footer-secondary-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.8rem;
-  }
-  
-  .newsletter {
-    flex-basis: 100%;
-    max-width: 300px;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .newsletter h3 {
-    margin-bottom: 1rem;
-    color: #fff;
-  }
-  
-  .newsletter form {
-    display: flex;
-    margin-bottom: 1rem;
-  }
-  
-  .newsletter input[type="email"] {
-    padding: 0.5rem;
-    border: none;
-    flex-grow: 1;
-  }
-  
-  .newsletter button {
-    background-color: #ffd54f;
-    color: #1a237e;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .newsletter p {
-    font-size: 0.8rem;
-    opacity: 0.7;
-  }
-  
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  .footer-bottom p {
-    margin: 0;
-    font-size: 0.8rem;
-  }
-  
-  .social-icons {
-    display: flex;
-  }
-  
-  .social-icons a {
-    margin-left: 1rem;
-  }
-  
-  .social-icons img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  @media (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-    }
-    
-    .footer-links {
-      flex-direction: column;
-      gap: 1rem;
-    }
-  
-    .newsletter {
-      max-width: 100%;
-    }
-  
-    .footer-bottom {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .social-icons {
-      margin-top: 1rem;
-    }
-  }
 
