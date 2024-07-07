@@ -1,11 +1,11 @@
-/* Reset default margin and padding */
+/* Reset default margin and padding for all elements */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Prevent horizontal scrolling */
+/* Prevent horizontal scrolling and set default background color and line height */
 html,
 body {
   overflow-x: hidden;
@@ -20,6 +20,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  /* Center the container, full width, no padding, use flexbox and wrap */
 }
 
 /* Row to contain columns */
@@ -28,82 +29,20 @@ body {
   flex-wrap: wrap;
   padding: 10px;
   width: 100%; /* Ensure the row does not exceed the viewport width */
+  /* Flexbox for layout, wrap content, add padding, and full width */
 }
 
-/* Columns */
+/* Columns with background color, border, padding, and text alignment */
 .col {
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   padding: 15px;
   margin-bottom: 15px;
   text-align: center;
+  /* Light grey background, border, padding, margin, and center text */
 }
 
-.col-md-3 {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-.jurassic-ride,
-.fantasy-land,
-.future-world,
-.wild-west {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.ride-card {
-  background: #fafaf1;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-.ride-image {
-  width: 100%;
-  height: auto;
-}
-
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  padding: 10px;
-}
-
-.info-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.label {
-  font-weight: bold;
-  font-size: 15px;
-  font-weight: 600 !important;
-  color: #003049;
-}
-
-.value {
-  font-size: 15px;
-  font-weight: 400 !important;
-}
-
-.ride-requirements {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  gap: 5px;
-}
-
-.minutes {
-  color: #008080 !important;
-}
-
+/* Different column sizes for responsiveness */
 .col-md-1 {
   width: 8.33%;
 }
@@ -141,7 +80,84 @@ body {
   width: 100%;
 }
 
-/* Responsive adjustments */
+/* Special full-width styling for ride zones */
+.jurassic-ride,
+.fantasy-land,
+.future-world,
+.wild-west {
+  flex: 0 0 100%;
+  max-width: 100%;
+  /* Full width and max width for these elements */
+}
+
+/* Styling for ride cards with background, border, shadow, and padding */
+.ride-card {
+  background: #fafaf1;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding-bottom: 10px;
+  text-align: center;
+  /* Light background, rounded corners, shadow, margin, padding, and center text */
+}
+
+/* Styling for ride images to be responsive */
+.ride-image {
+  width: 100%;
+  height: auto;
+  /* Full width and maintain aspect ratio */
+}
+
+/* Grid layout for ride information */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+  /* Grid layout with 4 columns, gap, and padding */
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Flexbox layout for center alignment */
+}
+
+/* Styling for labels in ride information */
+.label {
+  font-weight: bold;
+  font-size: 15px;
+  font-weight: 600 !important;
+  color: #003049 !important;
+  /* Bold, specific color, and font size */
+}
+
+/* Styling for values in ride information */
+.value {
+  font-size: 15px;
+  font-weight: 400 !important;
+  /* Font size and weight */
+}
+
+/* Layout for ride requirements with spacing */
+.ride-requirements {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 5px;
+  /* Flexbox layout, vertical direction, left alignment, and gap */
+}
+
+/* Special color for minutes */
+.minutes {
+  color: #008080 !important;
+  /* Teal color */
+}
+
+/* Responsive font size adjustments for labels and values */
 @media (min-width: 768px) {
   .label {
     font-weight: bold;
@@ -153,12 +169,13 @@ body {
   }
 }
 
-/* Image assets/styles */
+/* Styling for map container and image */
 .map {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  /* Full width, full viewport height, and hidden overflow */
 }
 
 .map img {
@@ -169,47 +186,59 @@ body {
   height: 100%;
   object-fit: cover;
   transform: translate(-50%, -50%);
+  /* Center image, cover area, and translate to center */
 }
 
+/* Styling for attraction descriptions */
 .attractions-desc {
   text-align: center;
-  margin: 30px 0px;
+  margin: 30px 0;
+  /* Center text and margin */
 }
 
+/* Centering content and adding padding */
 .display-center {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 10px 5%;
+  /* Flexbox layout, center alignment, vertical direction, and padding */
 }
 
+/* Carousel container styling */
 .carousel-container {
   overflow: hidden;
   position: relative;
   width: 100%;
+  /* Hidden overflow, relative positioning, and full width */
 }
 
 .carousel-wrapper {
   display: flex;
   transition: transform 0.5s ease-in-out;
   gap: 10px; /* Add gap between items */
+  /* Flexbox layout, smooth transition, and gap */
 }
 
 .carousel-item {
   min-width: calc(100% - 10px); /* Adjust for gap */
   flex: 0 0 calc(100% - 10px);
   transition: all 0.5s ease;
+  /* Full width minus gap, smooth transition */
 }
 
+/* Adjust carousel item width for larger screens */
 @media (min-width: 768px) {
   .carousel-item {
     min-width: calc(33.33% - 10px);
     flex: 0 0 calc(33.33% - 10px);
+    /* One-third width minus gap */
   }
 
   .display-center {
     padding: 10px 15%;
+    /* Increased padding */
   }
 
   .jurassic-ride,
@@ -218,48 +247,61 @@ body {
   .wild-west {
     font-size: 80px !important;
     text-align: center;
+    /* Larger font size and center alignment */
   }
 }
 
+/* Specific styling for ride zone headers */
 .jurassic-ride,
 .fantasy-land,
 .future-world,
 .wild-west {
   text-align: center !important;
   font-size: 40px;
+  /* Center alignment and font size */
 }
 
 .jurassic-ride {
   color: #ff8a00 !important;
+  /* Orange color for Jurassic Park */
 }
 
 .fantasy-land {
   color: #329b00 !important;
+  /* Green color for Fantasy Land */
 }
 
 .future-world {
   color: #1400ff !important;
+  /* Blue color for Future World */
 }
 
 .wild-west {
   color: #ff4c00 !important;
+  /* Red color for Wild West */
 }
 
+/* Styling for ride headers */
 .ride-header {
-  margin: 30px 0px;
+  margin: 30px 0;
+  /* Margin for spacing */
 }
 
+/* Styling for ride names */
 .ride-name {
   font-family: "Poppins", "Roboto", sans-serif;
   font-size: 60px !important;
   font-weight: 400 !important;
   letter-spacing: 0.05em;
-  color: #003049 !important; /* Default color for h2 */
+  color: #003049 !important;
+  /* Custom font, size, weight, spacing, and color */
 }
 
+/* Responsive adjustments for ride names */
 @media (max-width: 1199.98px) and (min-width: 768px) {
   .ride-name {
     font-size: 60px !important;
+    /* Adjust font size for medium screens */
   }
 }
 
@@ -267,6 +309,7 @@ body {
 @media (max-width: 767.98px) and (min-width: 576px) {
   .ride-name {
     font-size: 25px !important;
+    /* Adjust font size for small devices */
   }
 }
 
@@ -274,15 +317,19 @@ body {
 @media (max-width: 575.98px) {
   .ride-name {
     font-size: 22px !important;
+    /* Adjust font size for extra small devices */
   }
 }
 
+/* Styling for attraction buttons */
 .attraction-buttons {
   margin-bottom: 20px;
   display: flex;
   column-gap: 30px;
+  /* Margin, flexbox layout, and gap */
 }
 
+/* Styling for arrow buttons */
 .arrow-attraction-button {
   background-color: transparent;
   padding: 10px;
@@ -292,124 +339,154 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  /* Transparent background, padding, border, circular shape, and center alignment */
 }
 
+/* Hover effect for arrow buttons */
 .arrow-attraction-button:hover {
   background-color: #008080;
   border: 1px solid #008080;
   transition-duration: 300ms;
   animation: ease-in-out;
   cursor: pointer;
+  /* Teal background and border, smooth transition, pointer cursor */
 }
 
+/* Change arrow color on hover */
 .arrow-attraction-button:hover .arrow-svg {
-  fill: #fff; /* Change this to the desired hover color */
+  fill: #fff;
+  /* White color on hover */
 }
 
+/* Default arrow color */
 .arrow-svg {
   fill: #003049;
+  /* Blue color */
 }
 
+/* Styling for Jurassic images container */
 .jurassic-images {
   display: flex;
   justify-content: center;
   gap: 5px;
+  /* Flexbox layout, center alignment, and gap */
 }
 
+/* Styling for rides description */
 .rides-desc {
   text-align: center;
+  /* Center alignment */
 }
 
-.jurassic-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.fantasy-land h2 {
-  color: green;
-  text-align: center;
-  font-size: 120px;
-}
-
-.fantasy-images {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-}
-
-.fantasy-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.future-world h2 {
-  color: blue;
-  text-align: center;
-  font-size: 120px;
-}
-
-.future-images {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-}
-
+.jurassic-buttons,
+.fantasy-buttons,
 .future-buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
+  /* Flexbox layout, center alignment, and gap */
 }
 
+/* Special styling for Fantasy Land header */
+.fantasy-land h2 {
+  color: green;
+  text-align: center;
+  font-size: 120px;
+  /* Green color, center alignment, and large font size */
+}
+
+/* Styling for Fantasy images container */
+.fantasy-images {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  /* Flexbox layout, center alignment, and gap */
+}
+
+/* Special styling for Future World header */
+.future-world h2 {
+  color: blue;
+  text-align: center;
+  font-size: 120px;
+  /* Blue color, center alignment, and large font size */
+}
+
+/* Styling for Future images container */
+.future-images {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  /* Flexbox layout, center alignment, and gap */
+}
+
+/* Special styling for Wild West header */
 .wild-west h2 {
   color: rgb(248, 97, 37);
   text-align: center;
   font-size: 120px;
+  /* Red color, center alignment, and large font size */
 }
 
+/* Styling for Wild images container */
 .wild-images {
   display: flex;
   justify-content: center;
   gap: 5px;
+  /* Flexbox layout, center alignment, and gap */
 }
 
+/* Styling for roller coaster text */
 .roller-coaster {
   color: black;
   text-align: center;
   font-size: 75px;
+  /* Black color, center alignment, and large font size */
 }
 
+/* Styling for ride descriptions */
 .rides-desc {
   color: black;
   text-align: center;
   font-size: xx-large;
+  /* Black color, center alignment, and large font size */
 }
 
+/* Styling for round buttons */
 .round-button {
   border: 2px;
   border-radius: 15px;
+  /* Border and rounded corners */
 }
 
+/* Active state styling for carousel items */
 .carousel-item.active .ride-card {
   background-color: #008080;
   transition-duration: 500ms;
+  /* Teal background and smooth transition */
 }
 
+/* Change value color in active carousel items */
 .carousel-item.active .value {
   color: white !important;
+  /* White color for values */
 }
 
+/* Styling for horizontal rules */
 hr {
   border: 1px solid #e9e9e9 !important;
   width: 100%;
+  /* Light grey border and full width */
 }
 
+/* Fade-in animation */
 .fade-in {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  /* Start with transparent and smooth transition */
 }
 
+/* Show class for fade-in effect */
 .show {
   opacity: 1;
+  /* Fully opaque */
 }
