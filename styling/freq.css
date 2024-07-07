@@ -1,0 +1,58 @@
+.pure-article {
+    font-size: 20px;
+    padding: 20px;
+    background-color: #002f49;
+    block-size: 350px;
+}
+.dont-miss {
+    text-align: center;
+    color: white;
+    position: relative; /* absolute or relative */
+    left: 55%;
+    bottom: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.whiteText {
+    color: white;
+}
+.redText {
+    color: red;
+}
+
+.pure-secure {
+    color: white;
+    background-color: #d62829;
+    float: center;
+    padding: 10px;
+    padding-right: 35px;
+    padding-left: 35px;
+    border: none;
+    text-decoration: none;
+    position: relative; /* absolute or relative */
+    left: 45%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pure-header {
+    font-size: 75px;
+    padding: 5px;
+    color: white;
+    /* font-family: "Acme" */
+    position: relative; /* absolute or relative */
+    left: 10%;
+    top: 15%;
+}
+/*
+.faq {
+  font-size: 45px;
+  padding: 15px;
+   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #002f49;
+}
+*/
+.safety-questions {
+    color: black;
+    font-size: 25px;
+}

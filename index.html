@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/styling/main.css" />
     <link rel="stylesheet" href="/styling/index.css" />
 
+    <link rel="stylesheet" href="/styling/freq.css" />
+
     <link rel="icon" href="/images/favicon.png" />
 
     <!-- pure css-->
@@ -34,7 +36,7 @@
             <a href="attractions.html" class="pure-menu-link">Attractions</a>
           </li>
           <li class="pure-menu-item">
-            <a href="#" class="pure-menu-link">Tickets</a>
+            <a href="tickets.html" class="pure-menu-link">Tickets</a>
           </li>
           <li class="pure-menu-item">
             <a href="" class="pure-menu-link cart-icon">
@@ -67,7 +69,7 @@
             <input type="radio" name="radio-buttons" id="img-1" checked />
             <li class="slide-container">
               <div class="slide-image">
-                <img src="images/carousel.jpeg" alt="Carousel Banner" />
+                <img src="images/home/carousel.jpg" alt="Carousel Banner" />
               </div>
               <div class="carousel-controls">
                 <label for="img-3" class="prev-slide">
@@ -81,9 +83,7 @@
             <input type="radio" name="radio-buttons" id="img-2" />
             <li class="slide-container">
               <div class="slide-image">
-                <img
-                  src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true"
-                />
+                <img src="images/home/jurassik.jpg" alt="Carousel Banner" />
               </div>
               <div class="carousel-controls">
                 <label for="img-1" class="prev-slide">
@@ -97,9 +97,7 @@
             <input type="radio" name="radio-buttons" id="img-3" />
             <li class="slide-container">
               <div class="slide-image">
-                <img
-                  src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg"
-                />
+                <img src="images/home/wild-west.jpg" alt="Carousel Banner" />
               </div>
               <div class="carousel-controls">
                 <label for="img-2" class="prev-slide">
@@ -158,94 +156,120 @@
 
     <div class="content-wrapper pure-g">
       <div class="content">
-
-
         <div class="intro-area">
           <h1>Orbitland Awaits!</h1>
           <section id="intro-section" class="pure-g">
             <div class="pure-u-1 pure-u-md-1-2" id="pure-food">
-                <img class="pure-img" src="assets/intro-image.webp" alt="Intro Image"/>
+              <img
+                class="pure-img"
+                src="assets/intro-image.webp"
+                alt="Intro Image"
+              />
             </div>
             <div class="pure-u-1 pure-u-md-1-2">
-                  <div class="intro-text">
-                    <h3>Travel Through Time and Thrills!</h3>
-                    <p>
-                      A world of suspense, laughter, knowledge, and entertainment
-                      awaits! Join us at Orbitland, where we take you on a ride through
-                      eras past and future for maximum awe and enjoyment. Whether to see
-                      the dinosaurs in their natural habitat or to be in the thick of a
-                      futuristic battle for our planet, Orbitland is sure to bring
-                      unforgettable memories to everyone!
-                    </p>
-                    <h3>Opening Hours</h3>
-                    <div class="pure-u-1 pure-u-md-2-2 open-h">
-                      <p class="pure-u-1 pure-u-md-1-2">Sunday - Thursday</p>
-                      <p class="pure-u-1 pure-u-md-1-3"><strong> 8 AM - 10 PM</strong></p>
-                    </div>
-                    <div class="pure-u-1 pure-u-md-2-2 open-h">
-                      <p class="pure-u-1 pure-u-md-1-2">Friday - Saturday</p>
-                      <p class="pure-u-1 pure-u-md-1-3"><strong>8 AM - 12 AM</strong></p>
-                    </div>
-                    <div class="pure-u-1 pure-u-md-2-2 open-h">
-                      <p class="pure-u-1 pure-u-md-1-2">Public Holidays (Day Before & During)</p>
-                      <p class="pure-u-1 pure-u-md-1-3"><strong>8 AM - 12 AM</strong></p>
-                    </div>
+              <div class="intro-text">
+                <h3>Travel Through Time and Thrills!</h3>
+                <p>
+                  A world of suspense, laughter, knowledge, and entertainment
+                  awaits! Join us at Orbitland, where we take you on a ride
+                  through eras past and future for maximum awe and enjoyment.
+                  Whether to see the dinosaurs in their natural habitat or to be
+                  in the thick of a futuristic battle for our planet, Orbitland
+                  is sure to bring unforgettable memories to everyone!
+                </p>
+                <h3>Opening Hours</h3>
+                <div class="pure-u-1 pure-u-md-2-2 open-h">
+                  <p class="pure-u-1 pure-u-md-1-2">Sunday - Thursday</p>
+                  <p class="pure-u-1 pure-u-md-1-3">
+                    <strong> 8 AM - 10 PM</strong>
+                  </p>
+                </div>
+                <div class="pure-u-1 pure-u-md-2-2 open-h">
+                  <p class="pure-u-1 pure-u-md-1-2">Friday - Saturday</p>
+                  <p class="pure-u-1 pure-u-md-1-3">
+                    <strong>8 AM - 12 AM</strong>
+                  </p>
+                </div>
+                <div class="pure-u-1 pure-u-md-2-2 open-h">
+                  <p class="pure-u-1 pure-u-md-1-2">
+                    Public Holidays (Day Before & During)
+                  </p>
+                  <p class="pure-u-1 pure-u-md-1-3">
+                    <strong>8 AM - 12 AM</strong>
+                  </p>
+                </div>
               </div>
             </div>
           </section>
         </div>
 
-
         <div class="zone-area">
           <h1>Explore Our Zones</h1>
           <section id="zone-section" class="pure-g">
             <div class="pure-u-1 pure-u-md-1-2 zone-grid" id="pure-zone">
-                <article class="zone-grid-item">
-                  <img class="pure-img" src="/assets/jurassic-park.jpeg" alt="Jurassic Park Image" />
-                  <h3>Jurassic Park</h3>
-                  <hr>
-                  <p class="zone-desc">
-                    Soar above the treetops on our DinoFlyer coaster, offering
-                    thrilling views and close encounters with these majestic
-                    prehistoric beasts.
-                  </p>
-                </div>
+              <article class="zone-grid-item">
+                <img
+                  class="pure-img"
+                  src="/assets/jurassic-park.jpeg"
+                  alt="Jurassic Park Image"
+                />
+                <h3>Jurassic Park</h3>
+                <hr />
+                <p class="zone-desc">
+                  Soar above the treetops on our DinoFlyer coaster, offering
+                  thrilling views and close encounters with these majestic
+                  prehistoric beasts.
+                </p>
+              </article>
+            </div>
 
             <div class="pure-u-1 pure-u-md-1-2 zone-grid" id="pure-zone">
-                </article>
-                <article class="zone-grid-item">
-                  <img class="pure-img" src="assets/fantasy-land.jpeg" alt="Fantasy Land Image" />
-                  <h3>Fantasy Land</h3>
-                  <hr>
-                  <p class="zone-desc">
-                    Revel in the illuminated beauty of the Elven kingdom during our
-                    enchanted night rides, where the park comes alive with magical
-                    light displays.
-                  </p>
-                </article>
+              <article class="zone-grid-item">
+                <img
+                  class="pure-img"
+                  src="assets/fantasy-land.jpeg"
+                  alt="Fantasy Land Image"
+                />
+                <h3>Fantasy Land</h3>
+                <hr />
+                <p class="zone-desc">
+                  Revel in the illuminated beauty of the Elven kingdom during
+                  our enchanted night rides, where the park comes alive with
+                  magical light displays.
+                </p>
+              </article>
             </div>
             <div class="pure-u-1 pure-u-md-1-2 zone-grid" id="pure-zone">
-                <article class="zone-grid-item">
-                  <img class="pure-img" src="assets/future-world.jpeg" alt="Future World Image" />
-                  <h3>Future World</h3>
-                  <hr>
-                  <p class="zone-desc">
-                    Join the resistance and navigate through chaotic cityscapes in
-                    our RoboRush roller coaster, where every twist and turn
-                    escalates the adrenaline rush.
-                  </p>
-                </article>
+              <article class="zone-grid-item">
+                <img
+                  class="pure-img"
+                  src="assets/future-world.jpeg"
+                  alt="Future World Image"
+                />
+                <h3>Future World</h3>
+                <hr />
+                <p class="zone-desc">
+                  Join the resistance and navigate through chaotic cityscapes in
+                  our RoboRush roller coaster, where every twist and turn
+                  escalates the adrenaline rush.
+                </p>
+              </article>
             </div>
             <div class="pure-u-1 pure-u-md-1-2 zone-grid" id="pure-zone">
-                <article class="zone-grid-item">
-                  <img class="pure-img" src="assets/wild-west.jpeg" alt="Wild West Image" />
-                  <h3>Wild West</h3>
-                  <hr>
-                  <p class="zone-desc">
-                    Gallop into the sunset on our Gold Rush Express, where each ride
-                    tells a tale of fortune and peril in the rugged frontier.
-                  </p>
-                </article>
+              <article class="zone-grid-item">
+                <img
+                  class="pure-img"
+                  src="assets/wild-west.jpeg"
+                  alt="Wild West Image"
+                />
+                <h3>Wild West</h3>
+                <hr />
+                <p class="zone-desc">
+                  Gallop into the sunset on our Gold Rush Express, where each
+                  ride tells a tale of fortune and peril in the rugged frontier.
+                </p>
+              </article>
+            </div>
           </section>
         </div>
 
@@ -253,133 +277,232 @@
           <h1>Satisfy Your Cravings</h1>
           <section id="food-zone" class="pure-g">
             <div class="pure-u-1 pure-u-md-1-2" id="pure-food">
-                <img class="pure-img" src="assets/garden-grille.jpeg" alt="Garden Grille Image" />
+              <img
+                class="pure-img"
+                src="assets/garden-grille.jpeg"
+                alt="Garden Grille Image"
+              />
             </div>
             <div class="pure-u-1 pure-u-md-1-2 food-desc">
-                  <h2>Garden Grille</h2>
-                  <p>
-                    Nestled within Fantasy World, Garden Grille serves enchanting
-                    garden-to-table dishes sourced from the magical surroundings.
-                    Here, guests can relax in a whimsical setting and enjoy fresh
-                    flavors that bring fairy tales to life. It's a perfect retreat
-                    for families seeking a serene dining experience.
-                  </p>
+              <h2>Garden Grille</h2>
+              <p>
+                Nestled within Fantasy World, Garden Grille serves enchanting
+                garden-to-table dishes sourced from the magical surroundings.
+                Here, guests can relax in a whimsical setting and enjoy fresh
+                flavors that bring fairy tales to life. It's a perfect retreat
+                for families seeking a serene dining experience.
+              </p>
             </div>
             <div class="pure-u-1 pure-u-md-1-2" id="future-food">
-                <img class="pure-img" src="assets/trattoria-moderna.jpeg" alt="Trattoria Moderna Image" />
+              <img
+                class="pure-img"
+                src="assets/trattoria-moderna.jpeg"
+                alt="Trattoria Moderna Image"
+              />
             </div>
             <div class="pure-u-1 pure-u-md-1-2 food-desc">
-                  <h2>Trattoria Moderna</h2>
-                  <p >
-                    Trattoria Moderna offers a sleek take on classic Italian cuisine
-                    with a modern twist. As robots attend to details, diners can
-                    enjoy innovative meals that blend tradition with tomorrow’s
-                    culinary trends. This restaurant is a must-visit for those
-                    exploring the innovations of Future World.
-                  </p>
-             </div>
+              <h2>Trattoria Moderna</h2>
+              <p>
+                Trattoria Moderna offers a sleek take on classic Italian cuisine
+                with a modern twist. As robots attend to details, diners can
+                enjoy innovative meals that blend tradition with tomorrow’s
+                culinary trends. This restaurant is a must-visit for those
+                exploring the innovations of Future World.
+              </p>
+            </div>
             <div class="pure-u-1 pure-u-md-1-2" id="west-food">
-              <img class="pure-img" src="assets/ocean-catch.jpg" alt="Ocean's Catch Image" />
+              <img
+                class="pure-img"
+                src="assets/ocean-catch.jpg"
+                alt="Ocean's Catch Image"
+              />
             </div>
             <div class="pure-u-1 pure-u-md-1-2 food-desc">
-                <h2>Ocean's Catch</h2>
-                <p>
-                  Set against the rugged backdrop of Wild West, Ocean's Catch
-                  brings a taste of the sea to this frontier setting. Guests can
-                  indulge in freshly caught ocean-to-table specialties as they
-                  soak in the old-western atmosphere. It's the ideal spot for
-                  adventurers looking to refuel with hearty, maritime fare.
-                </p>
+              <h2>Ocean's Catch</h2>
+              <p>
+                Set against the rugged backdrop of Wild West, Ocean's Catch
+                brings a taste of the sea to this frontier setting. Guests can
+                indulge in freshly caught ocean-to-table specialties as they
+                soak in the old-western atmosphere. It's the ideal spot for
+                adventurers looking to refuel with hearty, maritime fare.
+              </p>
             </div>
             <div class="pure-u-1 pure-u-md-1-2" id="jurassic-food">
-              <img class="pure-img" src="assets/fusion-fire.jpg" alt="Fusion Fire Image" />
+              <img
+                class="pure-img"
+                src="assets/fusion-fire.jpg"
+                alt="Fusion Fire Image"
+              />
             </div>
             <div class="pure-u-1 pure-u-md-1-2 food-desc">
-                  <h2>Fusion Fire</h2>
-                  <p>
-                    Deep in the heart of Jurassic Park, Fusion Fire ignites palates
-                    with a daring mix of Asian and Latin flavors. This eatery offers
-                    a thrilling dining adventure where prehistoric ambiance meets
-                    contemporary cuisine. It's an explosive culinary experience for
-                    bold explorers of the park.
-                  </p>
+              <h2>Fusion Fire</h2>
+              <p>
+                Deep in the heart of Jurassic Park, Fusion Fire ignites palates
+                with a daring mix of Asian and Latin flavors. This eatery offers
+                a thrilling dining adventure where prehistoric ambiance meets
+                contemporary cuisine. It's an explosive culinary experience for
+                bold explorers of the park.
+              </p>
             </div>
           </section>
         </div>
 
         <div class="events-area">
-          <h1 style="text-align:center">Ongoing Events</h1>
-            <div class="pure-u-1 pure-u-md-1-3">
-              <div class="card">
+          <h1 style="text-align: center">Ongoing Events</h1>
+          <div class="pure-u-1 pure-u-md-1-3" id="acrobatics-card">
+            <div class="card">
               <div class="in">
-              <img class="pure-img" src="/assets/acrobatics-event.jpg" alt="Acrobatics Image" />
-              <h3>Acrobatics</h3>
-              <p class="event-date">27th June 2024 - 28th July, 2024</p>
-              <p class="event-desc">
-                Join us for a mesmerizing display of acrobatics, where
-                performers defy gravity and dazzle with their amazing aerial
-                feats.
-              </p>
+                <img
+                  class="pure-img"
+                  src="/assets/acrobatics-event.jpg"
+                  alt="Acrobatics Image"
+                />
+                <h3>Acrobatics</h3>
+                <p class="event-date">27th June 2024 - 28th July, 2024</p>
+                <p class="event-desc">
+                  Join us for a mesmerizing display of acrobatics, where
+                  performers defy gravity and dazzle with their amazing aerial
+                  feats.
+                </p>
               </div>
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-3" id="finn-card">
+            <div class="card">
+              <div class="in">
+                <img
+                  class="pure-img"
+                  src="/assets/finn-image.jpg"
+                  alt="Finn Image"
+                />
+                <h3>Finn the Dolphin</h3>
+                <p class="event-date">27th April 2024 - 28th July, 2024</p>
+                <p class="event-desc">
+                  Come see Finn the Dolphin in action as he leaps and splashes
+                  in a delightful display of aquatic agility that's fun for the
+                  whole family.
+                </p>
               </div>
             </div>
-            <div class="pure-u-1 pure-u-md-1-3">
-              <div class="card">
+          </div>
+          <div class="pure-u-1 pure-u-md-1-3" id="haunted-card">
+            <div class="card">
               <div class="in">
-              <img class="pure-img" src="/assets/finn-image.jpg" alt="Finn Image" />
-              <h3>Finn the Dolphin</h3>
-              <p class="event-date">27th April 2024 - 28th July, 2024</p>
-              <p class="event-desc">
-                Come see Finn the Dolphin in action as he leaps and splashes in
-                a delightful display of aquatic agility that's fun for the whole
-                family.
-              </p>
+                <img
+                  class="pure-img"
+                  src="/assets/haunted-house.jpg"
+                  alt="Haunted House Image"
+                />
+                <h3>Haunted House</h3>
+                <p class="event-date">27th June 2024 - 28th July, 2024</p>
+                <p class="event-desc">
+                  Step into our Haunted House for a thrilling journey through
+                  ghostly tales and eerie encounters that promise to be both
+                  spooky and fun.
+                </p>
+              </div>
             </div>
-            </div>
-            </div>
-            <div class="pure-u-1 pure-u-md-1-3" id="haunted-card">
-              <div class="card">
-              <div class="in">
-              <img class="pure-img" src="/assets/haunted-house.jpg" alt="Haunted House Image" />
-              <h3>Haunted House</h3>
-              <p class="event-date">27th June 2024 - 28th July, 2024</p>
-              <p class="event-desc">
-                Step into our Haunted House for a thrilling journey through
-                ghostly tales and eerie encounters that promise to be both
-                spooky and fun.
-              </p>
-            </div>
-            </div>
-            </div>
+          </div>
+        </div>
+
+        <div class="join-fun">
+          <article class="pure-article">
+            <h1 class="pure-header">Join The Fun at</h1>
+            <h1 class="pure-header">Orbitland</h1>
+
+            <p class="dont-miss">
+              <span class="redText">Tickets are selling fast!</span
+              ><span class="whiteText"> Don't let another</span>
+            </p>
+            <p class="dont-miss">
+              <span class="whiteText"
+                >moment pass without experiencing the</span
+              >
+            </p>
+            <p class="dont-miss">
+              <span class="whiteText">magic and excitement of Orbitland.</span>
+            </p>
+            <a class="pure-secure" href="#">SECURE YOUR SPOT</a>
+            <!--         <div>
+              <img
+                class="pure-img-responsive logo"
+                src="/images/red-logo.svg"
+                alt="Orbitland Logo"
+              />
+            </div>   -->
+          </article>
         </div>
 
         <div class="faq-area">
-          <section id="faq">
-            <h2>Frequently Asked Questions</h2>
-            <details>
-              <summary>What safety measures are in place at Orbitland?</summary>
-              <p>
-                We prioritize guest safety with regular equipment checks,
-                trained staff, and adherence to all safety regulations.
-              </p>
-            </details>
-            <details>
-              <summary>How can I save money on tickets?</summary>
-              <p>
-                Check our website for seasonal promotions, group discounts, and
-                annual pass options.
-              </p>
-            </details>
-            <details>
-              <summary>
-                Does Orbitland have facilities for guests with disabilities?
-              </summary>
-              <p>
-                Yes, we strive to make our park accessible to all guests. Please
-                contact us for specific accommodations.
-              </p>
-            </details>
-          </section>
+          <h2 class="faq">Frequently Asked Questions</h2>
+          <div>
+            <ul class="safety-questions">
+              <details>
+                <summary class="questions">
+                  What safety measures are in place at Orbitland?
+                </summary>
+                <p>
+                  At Orbitland, our top priority is to provide a safe and
+                  enjoyable experience for all our visitors. To achieve this,
+                  our entire park is under constant surveillance, 24/7, through
+                  CCTV, and we ha ve a team of highly trained security
+                  personnel. There are also rules that we expect all our
+                  visitors to follow so that everybody can have a better time.
+                  These rules are; Carrying weapons of any kind is forbidden and
+                  will result in a ban from the park. Unsolicited pictures or
+                  video-taking is prohibited. Harassment of any kind is
+                  forbidden. Smoking- vaping. Re-selling tickets is strictly
+                  prohibited and will result in a lifetime ban from the park.
+                  All visitors are expected to respect the queues. We expect our
+                  visitors to follow these guidelines for a continued safe and
+                  fun environment.
+                </p>
+              </details>
+
+              <details>
+                <summary class="questions">How can I find lost items?</summary>
+                <p>
+                  Our lost and found room is the first place to check for such
+                  items. If you cannot find the lost item here, we will request
+                  that you fill out a form describing the item and your contact
+                  info, and we will let you know if it is found.
+                </p>
+              </details>
+
+              <details>
+                <summary class="questions">
+                  Does Orbitland have facilities for guests with disabilities?
+                </summary>
+                <p>
+                  Yes, we strive to make our park accessible to all guests.
+                  Please contact us for specific accommodations.
+                </p>
+              </details>
+
+              <details>
+                <summary class="questions">
+                  Can I leave the park and re-enter on the same day?
+                </summary>
+                <p>
+                  Only season pass holders can exit and re-enter the park on the
+                  same day. This is a precaution to lessen waiting times to
+                  enter the park.
+                </p>
+              </details>
+
+              <details>
+                <summary class="questions">
+                  Can I bring my own food and drinks to the park?
+                </summary>
+                <p>
+                  Visitors are not allowed to bring outside food and beverages
+                  into Orbitland, except for baby food and specific dietary
+                  needs. We offer a wide variety of dining options throughoutthe
+                  park to cater to all tastes and preferences.
+                </p>
+              </details>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="footer">
