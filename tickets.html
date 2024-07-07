@@ -2,406 +2,499 @@
 Adobe Firefly (https://firefly.adobe.com/generate/images?ff_channel=adobe_com&ff_campaign=feature_page&ff_source=firefly_seo&id=d08fb434-72bf-4121-a180-51d4cfcacee1)
 The prompts used were the alternate text for each respective image and were all sourced on the 5th of july 2024-->
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Meta tags for character encoding and responsive design -->
-    <meta charset="UTF-8" /> <!-- Specifies the character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures proper rendering on mobile devices -->
-    
+    <meta charset="UTF-8" />
+    <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensures proper rendering on mobile devices -->
+
     <!-- Page title - appears in browser tab -->
     <title>Orbitland Theme Park - Tickets and Packages</title>
-    
+
     <!-- External CSS file links - these files contain the styles for the page -->
-    <link rel="stylesheet" href="/styling/main.css" /> <!-- General styles for the entire site -->
-    <link rel="stylesheet" href="/styling/navbar.css" /> <!-- Styles for the navigation bar -->
-    <link rel="stylesheet" href="/styling/homepage.css" /> <!-- Styles from the homepage that might be reused -->
-    <link rel="stylesheet" href="/styling/tickets.css" /> <!-- Specific styles for the tickets page -->
+    <link rel="stylesheet" href="/styling/main.css" />
+    <!-- General styles for the entire site -->
+    <link rel="stylesheet" href="/styling/navbar.css" />
+    <!-- Styles for the navigation bar -->
+    <link rel="stylesheet" href="/styling/homepage.css" />
+    <!-- Styles from the homepage that might be reused -->
+    <link rel="stylesheet" href="/styling/tickets.css" />
+    <!-- Specific styles for the tickets page -->
     <!-- Pure CSS framework for responsive design - helps with layout and grid system -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" />
-    <link rel="stylesheet" href="/styling/grids-responsive-min.css" /> <!-- Additional responsive grid styles -->
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+    />
+    <link rel="stylesheet" href="/styling/grids-responsive-min.css" />
+    <!-- Additional responsive grid styles -->
+
     <!-- Favicon - small icon displayed in the browser tab -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
   </head>
-  
+
   <body>
-  <!-- Header section with navigation menu -->
-<header>
-  <!-- Container for the header content -->
-  <div class="header">
-    <!-- Navigation menu container with Pure CSS classes for styling -->
-    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-      <!-- Logo image for the theme park -->
-      <img class="pure-menu-heading pure-img-responsive" src="/images/white-logo.svg" alt="Orbitland Logo" />
-      <!-- Site title that also serves as a home page link -->
-      <a href="index.html" class="pure-menu-heading title">Orbitland</a>
+    <!-- Header section with navigation menu -->
+    <header>
+      <!-- Container for the header content -->
+      <div class="header">
+        <!-- Navigation menu container with Pure CSS classes for styling -->
+        <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+          <!-- Logo image for the theme park -->
+          <img
+            class="pure-menu-heading pure-img-responsive"
+            src="/images/white-logo.svg"
+            alt="Orbitland Logo"
+          />
+          <!-- Site title that also serves as a home page link -->
+          <a href="index.html" class="pure-menu-heading title">Orbitland</a>
 
-      <!-- Navigation menu items list -->
-      <ul class="pure-menu-list">
-        <!-- Menu item for Attractions page -->
-        <li class="pure-menu-item">
-          <!-- Link to the Attractions page -->
-          <a href="rides.html" class="pure-menu-link">Attractions</a>
-        </li>
-        <!-- Menu item for Homepage -->
-        <li class="pure-menu-item">
-          <!-- Link to the Homepage -->
-          <a href="homepage.html" class="pure-menu-link">Homepage</a>
-        </li>
-        <!-- Menu item for shopping cart -->
-        <li class="pure-menu-item">
-          <!-- Link for the shopping cart (currently empty href) -->
-          <a href="" class="pure-menu-link cart-icon">
-            <!-- SVG icon for the shopping cart -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-              <!-- Path data for the cart icon -->
-              <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" fill="currentColor" />
-            </svg>
-          </a>
-        </li>
-        <!-- Menu item for search functionality -->
-        <li class="pure-menu-item">
-          <!-- Link for the search function (currently empty href) -->
-          <a href="" class="pure-menu-link search-icon">
-            <!-- SVG icon for the search function -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <!-- Path data for the search icon -->
-              <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" fill="currentColor" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</header>
-
-   <!-- Main content area - contains all the ticket information -->
-<main>
-  <!-- Ticket options section - displays different ticket types available -->
-  <section class="ticket-options">
-    <!-- Main heading for the ticket options section -->
-    <h1>Ticket Options</h1>
-    <!-- Grid container for organizing ticket options in a structured layout -->
-    <div class="grid">
-      <!-- Child ticket option - an article element represents a self-contained composition -->
-      <article class="grid-item">
-        <!-- Image representing child attractions - src specifies the image file, alt provides a text description for accessibility -->
-        <img src="images/child-ticket.jpg" alt="Children enjoying space-themed attractions" />
-        <!-- Heading for the child ticket option -->
-        <h2>Child Ticket (Ages 3-12)</h2>
-        <!-- Paragraph describing what's included with the child ticket -->
-        <p>Get ready for an adventure! Full access to all kid-friendly attractions and exciting playgrounds.</p>
-        <!-- Paragraph displaying the price, with a class for styling -->
-        <p class="price">$30</p>
-        <!-- Anchor tag functioning as a button to purchase the ticket - href="#" is a placeholder link -->
-        <a href="#" class="buy-now">Buy Now</a>
-      </article>
-
-      <!-- Student ticket option - similar structure to the child ticket -->
-      <article class="grid-item">
-        <!-- Image for student ticket -->
-        <img src="images/student-Pass.png" alt="Students exploring dinosaur exhibits" />
-        <!-- Heading for student ticket -->
-        <h2>Student Ticket (Valid ID required)</h2>
-        <!-- Description of student ticket benefits -->
-        <p>Expand your universe of knowledge! Includes access to educational exhibits and all main attractions.</p>
-        <!-- Price display for student ticket -->
-        <p class="price">$35</p>
-        <!-- Purchase button for student ticket -->
-        <a href="#" class="buy-now">Buy Now</a>
-      </article>
-
-      <!-- Adult ticket option - similar structure to previous ticket options -->
-      <article class="grid-item">
-        <!-- Image for adult ticket -->
-        <img src="images/adult-Pass.png" alt="Adults on thrilling space rides" />
-        <!-- Heading for adult ticket -->
-        <h2>Adult Ticket (Ages 13+)</h2>
-        <!-- Description of adult ticket benefits -->
-        <p>Journey through the universe! Enjoy all Orbitland has to offer, including thrill rides and immersive experiences.</p>
-        <!-- Price display for adult ticket -->
-        <p class="price">$45</p>
-        <!-- Purchase button for adult ticket -->
-        <a href="#" class="buy-now">Buy Now</a>
-      </article>
-    </div>
-    <!-- Note about ticket dates - provides additional information about pricing and availability -->
-    <p class="note">* Choose your launch date: Select specific dates or date ranges for your visit. Prices may vary during peak seasons and special events.</p>
-  </section>
-
-  <!-- Bundles and packages section - offers combined ticket options for better value -->
-  <section class="bundles-packages">
-    <!-- Heading for the bundles and packages section -->
-    <h2>Bundles and Packages</h2>
-    <!-- Grid container for organizing package options -->
-    <div class="grid">
-      <!-- Family package option -->
-      <article class="grid-item">
-        <!-- Image representing the family package -->
-        <img src="images/family-package.jpg" alt="Family enjoying Orbitland attractions" />
-        <!-- Heading for the family package -->
-        <h3>Family Space Odyssey</h3>
-        <!-- Description of what's included in the family package -->
-        <p>2 Adult + 2 Child tickets, plus a $20 food voucher and free parking.</p>
-        <!-- Price display for the family package -->
-        <p class="price">$140</p>
-        <!-- Purchase button for the family package -->
-        <a href="#" class="buy-now">Buy Now</a>
-      </article>
-
-      <!-- Group package option - similar structure to the family package -->
-      <article class="grid-item">
-        <!-- Image for group package -->
-        <img src="images/group-package.jpg" alt="Group of friends at Orbitland" />
-        <!-- Heading for group package -->
-        <h3>Cowboy Crew Package</h3>
-        <!-- Description of group package benefits -->
-        <p>Perfect for groups! 6 tickets of any type, reserved celebration area, and 10% off merchandise.</p>
-        <!-- Price display for group package -->
-        <p class="price">$250</p>
-        <!-- Purchase button for group package -->
-        <a href="#" class="buy-now">Buy Now</a>
-      </article>
-
-      <!-- Seasonal package option - similar structure to previous packages -->
-      <article class="grid-item">
-        <!-- Image for seasonal package -->
-        <img src="images/seasonal-package.jpg" alt="Orbitland during off-peak season" />
-        <!-- Heading for seasonal package -->
-        <h3>Seasonal Mythical Deal</h3>
-        <!-- Description of seasonal package benefits -->
-        <p>Valid during off-peak months. 4 tickets of any type, plus 4 Astro Meal vouchers.</p>
-        <!-- Price display for seasonal package -->
-        <p class="price">$160</p>
-        <!-- Purchase button for seasonal package -->
-        <a href="#" class="buy-now">Buy Now</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- Add-ons and perks section - additional features visitors can purchase to enhance their experience -->
-  <section class="add-ons">
-    <!-- Heading for the add-ons and perks section -->
-    <h2>Add-ons and Perks</h2>
-    <!-- Grid container for organizing add-on options -->
-    <div class="grid">
-      <!-- Fast-track entry option -->
-      <article class="grid-item">
-        <!-- Image representing fast-track entry -->
-        <img src="images/fast-pass.jpg" alt="Space Warp" />
-        <!-- Heading for fast-track entry option -->
-        <h3>Warp Speed Entry</h3>
-        <!-- Description of fast-track entry benefit -->
-        <p>Skip the regular lines on all major attractions.</p>
-        <!-- Price display for fast-track entry -->
-        <p class="price">$20/person</p>
-        <!-- Button to add fast-track entry to cart -->
-        <a href="#" class="buy-now">Add to Cart</a>
-      </article>
-
-      <!-- Buffet option - similar structure to fast-track entry -->
-      <article class="grid-item">
-        <!-- Image for buffet option -->
-        <img src="images/buffet-pass.jpg" alt="Milky Way Restaurant buffet" />
-        <!-- Heading for buffet option -->
-        <h3>Orbit Feast Buffet</h3>
-        <!-- Description of buffet option -->
-        <p>All-you-can-eat dining at your favorite Restaurant of choice.</p>
-        <!-- Price display for buffet, showing different prices for adults and children -->
-        <p class="price">$25/adult, $15/child</p>
-        <!-- Button to add buffet option to cart -->
-        <a href="#" class="buy-now">Add to Cart</a>
-      </article>
-
-      <!-- VIP experience option - similar structure to previous add-ons -->
-      <article class="grid-item">
-        <!-- Image for VIP experience -->
-        <img src="images/vip-experience.jpg" alt="King eating grapes" />
-        <!-- Heading for VIP experience -->
-        <h3>Enchanted VIP Experience</h3>
-        <!-- Description of VIP experience benefits -->
-        <p>Personal guide, exclusive attraction access, and premium viewing for shows.</p>
-        <!-- Price display for VIP experience -->
-        <p class="price">$75/person</p>
-        <!-- Button to add VIP experience to cart -->
-        <a href="#" class="buy-now">Add to Cart</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- Annual and monthly passes section - for frequent visitors who want unlimited access -->
-  <section class="annual-monthly-passes">
-    <!-- Heading for the annual and monthly passes section -->
-    <h2>Annual and Monthly Passes</h2>
-    <!-- Grid container for organizing pass options -->
-    <div class="grid">
-      <!-- Monthly pass option -->
-      <article class="grid-item">
-        <!-- Image representing monthly pass benefits -->
-        <img src="images/monthly-pass.jpg" alt="Monthly Pass" />
-        <!-- Heading for monthly pass -->
-        <h3>Monthly Pass</h3>
-        <!-- Description of monthly pass benefits -->
-        <p>Perfect for frequent explorers! Unlimited visits each month, 5% off food and merchandise.</p>
-        <!-- Price display for monthly pass -->
-        <p class="price">$49/month</p>
-        <!-- Purchase button for monthly pass -->
-        <a href="#" class="buy-now">Buy Now</a>
-      </article>
-
-      <!-- Silver annual pass option - similar structure to monthly pass -->
-      <article class="grid-item">
-        <!-- Image for silver annual pass -->
-        <img src="images/silver-pass.jpg" alt="Silver Annual Pass" />
-        <!-- Heading for silver annual pass -->
-        <h3>Silver Annual Pass</h3>
-        <!-- Description of silver annual pass benefits -->
-        <p>Unlimited visits for 12 months, 10% off food and merchandise, free parking.</p>
-        <!-- Price display for silver annual pass -->
-        <p class="price">$199/year</p>
-        <!-- Purchase button for silver annual pass -->
-        <a href="#" class="buy-now">Buy Now</a>
-      </article>
-
-      <!-- Gold annual pass option - similar structure to previous pass options -->
-      <article class="grid-item">
-        <!-- Image for gold annual pass -->
-        <img src="images/gold-pass.jpg" alt="Gold Annual Pass" />
-        <!-- Heading for gold annual pass -->
-        <h3>Gold Annual Pass</h3>
-        <!-- Description of gold annual pass benefits -->
-        <p>All Silver benefits plus Warp Speed Entry, 4 guest passes, and exclusive event invites.</p>
-        <!-- Price display for gold annual pass -->
-        <p class="price">$299/year</p>
-        <!-- Purchase button for gold annual pass -->
-        <a href="#" class="buy-now">Buy Now</a>
-      </article>
-    </div>
-    <!-- Pass benefits information - highlights the advantages of having a pass -->
-    <div class="pass-benefits">
-      <!-- Heading for pass benefits section -->
-      <h3>All passes include:</h3>
-      <!-- Unordered list of pass benefits -->
-      <ul>
-        <!-- List item for special events benefit -->
-        <li>Special passholder events</li>
-        <!-- List item for early access benefit -->
-        <li>Early access to new attractions</li>
-        <!-- List item for discounts benefit -->
-        <li>Discounts on Cosmic VIP Experiences</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Additional information section - important notes for visitors to consider -->
-  <section class="additional-info">
-    <!-- Heading for additional information section -->
-    <h2>Additional Information</h2>
-    <!-- Unordered list of additional information points -->
-    <ul>
-      <!-- List item about price changes -->
-      <li>Prices subject to change during holidays and special events</li>
-      <!-- List item about group rates -->
-      <li>Group rates available for parties of 15 or more</li>
-      <!-- List item about promotional deals -->
-      <li>Keep an eye on our Promotional Deals section for limited-time offers!</li>
-    </ul>
-  </section>
-</main>
-
- <!-- Footer section - contains additional links and information -->
-<footer>
-  <!-- Container for all footer content -->
-  <div class="footer">
-    <!-- Large Orbitland text for branding -->
-    <p id="orbitland">ORBITLAND</p>
-    <!-- Horizontal rule for visual separation -->
-    <hr />
-    <!-- Logo container with responsive grid classes -->
-    <div class="pure-u-1 pure-u-md-1-8">
-      <!-- Logo image in the footer -->
-      <img class="pure-img-responsive logo" src="/images/white-logo.svg" alt="Orbitland Logo" />
-    </div>
-    <!-- Footer navigation links container -->
-    <div class="pure-u-1 pure-u-md-1-5">
-      <!-- List of main navigation links -->
-      <ul class="pure-menu-list">
-        <!-- Home page link -->
-        <li class="pure-menu-item">
-          <a href="#" class="pure-menu-link">Home &#9756;</a>
-        </li>
-        <!-- Attractions page link -->
-        <li class="pure-menu-item">
-          <a href="#" class="pure-menu-link">Attractions &#9756;</a>
-        </li>
-        <!-- Tickets page link -->
-        <li class="pure-menu-item">
-          <a href="#" class="pure-menu-link">Tickets &#9756;</a>
-        </li>
-      </ul>
-    </div>
-    <!-- Invisible horizontal rule for spacing -->
-    <hr class="inv" />
-    <!-- Additional footer links container -->
-    <div class="pure-u-1 pure-u-md-1-3">
-      <!-- List of secondary navigation links -->
-      <ul class="small-info pure-menu-list">
-        <!-- Careers page link -->
-        <li class="pure-menu-item">
-          <a href="#" class="pure-menu-link">Careers</a>
-        </li>
-        <!-- Rules & Regulations page link -->
-        <li class="pure-menu-item">
-          <a href="#" class="pure-menu-link">Rules & Regulations</a>
-        </li>
-        <!-- Policies page link -->
-        <li class="pure-menu-item">
-          <a href="#" class="pure-menu-link">Policies</a>
-        </li>
-        <!-- Contact page link -->
-        <li class="pure-menu-item">
-          <a href="#" class="pure-menu-link">Contact</a>
-        </li>
-      </ul>
-    </div>
-      <!-- Another invisible horizontal rule for spacing -->
-    <hr class="inv" />
-    <!-- Newsletter signup form container -->
-    <div class="pure-u-1 pure-u-md-1-4">
-      <div class="newsletter-container">
-        <!-- Newsletter signup heading -->
-        <h2 id="newsletter">SIGN UP TO NEWSLETTER</h2>
-        <!-- Newsletter signup form -->
-        <form class="pure-form">
-          <!-- Fieldset for form elements -->
-          <fieldset style="padding-bottom: 0">
-            <!-- Grid container for form layout -->
-            <div class="pure-g">
-              <!-- Email input container -->
-              <div class="pure-u-3-4">
-                <!-- Email input field -->
-                <input type="email" class="pure-input-1" placeholder="Email" />
-              </div>
-              <!-- Submit button container -->
-              <div class="pure-u-1-4">
-                <!-- Submit button for the form -->
-                <button type="submit" class="pure-button pure-button-primary">Submit</button>
-              </div>
-            </div>
-          </fieldset>
-        </form>
-        <!-- Opt-out information for the newsletter -->
-        <p>Opt out at any time by clicking the unsubscribe link included in each of our emails.</p>
+          <!-- Navigation menu items list -->
+          <ul class="pure-menu-list">
+            <!-- Menu item for Attractions page -->
+            <li class="pure-menu-item">
+              <!-- Link to the Attractions page -->
+              <a href="attractions.html" class="pure-menu-link">Attractions</a>
+            </li>
+            <!-- Menu item for Homepage -->
+            <li class="pure-menu-item">
+              <!-- Link to the Homepage -->
+              <a href="homepage.html" class="pure-menu-link">Homepage</a>
+            </li>
+            <!-- Menu item for shopping cart -->
+            <li class="pure-menu-item">
+              <!-- Link for the shopping cart (currently empty href) -->
+              <a href="" class="pure-menu-link cart-icon">
+                <!-- SVG icon for the shopping cart -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <!-- Path data for the cart icon -->
+                  <path
+                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </li>
+            <!-- Menu item for search functionality -->
+            <li class="pure-menu-item">
+              <!-- Link for the search function (currently empty href) -->
+              <a href="" class="pure-menu-link search-icon">
+                <!-- SVG icon for the search function -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!-- Path data for the search icon -->
+                  <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </header>
+
+    <!-- Main content area - contains all the ticket information -->
+    <main>
+      <!-- Ticket options section - displays different ticket types available -->
+      <section class="ticket-options">
+        <!-- Main heading for the ticket options section -->
+        <h1>Ticket Options</h1>
+        <!-- Grid container for organizing ticket options in a structured layout -->
+        <div class="grid">
+          <!-- Child ticket option - an article element represents a self-contained composition -->
+          <article class="grid-item">
+            <!-- Image representing child attractions - src specifies the image file, alt provides a text description for accessibility -->
+            <img
+              src="images/child-ticket.jpg"
+              alt="Children enjoying space-themed attractions"
+            />
+            <!-- Heading for the child ticket option -->
+            <h2>Child Ticket (Ages 3-12)</h2>
+            <!-- Paragraph describing what's included with the child ticket -->
+            <p>
+              Get ready for an adventure! Full access to all kid-friendly
+              attractions and exciting playgrounds.
+            </p>
+            <!-- Paragraph displaying the price, with a class for styling -->
+            <p class="price">$30</p>
+            <!-- Anchor tag functioning as a button to purchase the ticket - href="#" is a placeholder link -->
+            <a href="#" class="buy-now">Buy Now</a>
+          </article>
+
+          <!-- Student ticket option - similar structure to the child ticket -->
+          <article class="grid-item">
+            <!-- Image for student ticket -->
+            <img
+              src="images/student-Pass.png"
+              alt="Students exploring dinosaur exhibits"
+            />
+            <!-- Heading for student ticket -->
+            <h2>Student Ticket (Valid ID required)</h2>
+            <!-- Description of student ticket benefits -->
+            <p>
+              Expand your universe of knowledge! Includes access to educational
+              exhibits and all main attractions.
+            </p>
+            <!-- Price display for student ticket -->
+            <p class="price">$35</p>
+            <!-- Purchase button for student ticket -->
+            <a href="#" class="buy-now">Buy Now</a>
+          </article>
+
+          <!-- Adult ticket option - similar structure to previous ticket options -->
+          <article class="grid-item">
+            <!-- Image for adult ticket -->
+            <img
+              src="images/adult-Pass.png"
+              alt="Adults on thrilling space rides"
+            />
+            <!-- Heading for adult ticket -->
+            <h2>Adult Ticket (Ages 13+)</h2>
+            <!-- Description of adult ticket benefits -->
+            <p>
+              Journey through the universe! Enjoy all Orbitland has to offer,
+              including thrill rides and immersive experiences.
+            </p>
+            <!-- Price display for adult ticket -->
+            <p class="price">$45</p>
+            <!-- Purchase button for adult ticket -->
+            <a href="#" class="buy-now">Buy Now</a>
+          </article>
+        </div>
+        <!-- Note about ticket dates - provides additional information about pricing and availability -->
+        <p class="note">
+          * Choose your launch date: Select specific dates or date ranges for
+          your visit. Prices may vary during peak seasons and special events.
+        </p>
+      </section>
+
+      <!-- Bundles and packages section - offers combined ticket options for better value -->
+      <section class="bundles-packages">
+        <!-- Heading for the bundles and packages section -->
+        <h2>Bundles and Packages</h2>
+        <!-- Grid container for organizing package options -->
+        <div class="grid">
+          <!-- Family package option -->
+          <article class="grid-item">
+            <!-- Image representing the family package -->
+            <img
+              src="images/family-package.jpg"
+              alt="Family enjoying Orbitland attractions"
+            />
+            <!-- Heading for the family package -->
+            <h3>Family Space Odyssey</h3>
+            <!-- Description of what's included in the family package -->
+            <p>
+              2 Adult + 2 Child tickets, plus a $20 food voucher and free
+              parking.
+            </p>
+            <!-- Price display for the family package -->
+            <p class="price">$140</p>
+            <!-- Purchase button for the family package -->
+            <a href="#" class="buy-now">Buy Now</a>
+          </article>
+
+          <!-- Group package option - similar structure to the family package -->
+          <article class="grid-item">
+            <!-- Image for group package -->
+            <img
+              src="images/group-package.jpg"
+              alt="Group of friends at Orbitland"
+            />
+            <!-- Heading for group package -->
+            <h3>Cowboy Crew Package</h3>
+            <!-- Description of group package benefits -->
+            <p>
+              Perfect for groups! 6 tickets of any type, reserved celebration
+              area, and 10% off merchandise.
+            </p>
+            <!-- Price display for group package -->
+            <p class="price">$250</p>
+            <!-- Purchase button for group package -->
+            <a href="#" class="buy-now">Buy Now</a>
+          </article>
+
+          <!-- Seasonal package option - similar structure to previous packages -->
+          <article class="grid-item">
+            <!-- Image for seasonal package -->
+            <img
+              src="images/seasonal-package.jpg"
+              alt="Orbitland during off-peak season"
+            />
+            <!-- Heading for seasonal package -->
+            <h3>Seasonal Mythical Deal</h3>
+            <!-- Description of seasonal package benefits -->
+            <p>
+              Valid during off-peak months. 4 tickets of any type, plus 4 Astro
+              Meal vouchers.
+            </p>
+            <!-- Price display for seasonal package -->
+            <p class="price">$160</p>
+            <!-- Purchase button for seasonal package -->
+            <a href="#" class="buy-now">Buy Now</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Add-ons and perks section - additional features visitors can purchase to enhance their experience -->
+      <section class="add-ons">
+        <!-- Heading for the add-ons and perks section -->
+        <h2>Add-ons and Perks</h2>
+        <!-- Grid container for organizing add-on options -->
+        <div class="grid">
+          <!-- Fast-track entry option -->
+          <article class="grid-item">
+            <!-- Image representing fast-track entry -->
+            <img src="images/fast-pass.jpg" alt="Space Warp" />
+            <!-- Heading for fast-track entry option -->
+            <h3>Warp Speed Entry</h3>
+            <!-- Description of fast-track entry benefit -->
+            <p>Skip the regular lines on all major attractions.</p>
+            <!-- Price display for fast-track entry -->
+            <p class="price">$20/person</p>
+            <!-- Button to add fast-track entry to cart -->
+            <a href="#" class="buy-now">Add to Cart</a>
+          </article>
+
+          <!-- Buffet option - similar structure to fast-track entry -->
+          <article class="grid-item">
+            <!-- Image for buffet option -->
+            <img
+              src="images/buffet-pass.jpg"
+              alt="Milky Way Restaurant buffet"
+            />
+            <!-- Heading for buffet option -->
+            <h3>Orbit Feast Buffet</h3>
+            <!-- Description of buffet option -->
+            <p>All-you-can-eat dining at your favorite Restaurant of choice.</p>
+            <!-- Price display for buffet, showing different prices for adults and children -->
+            <p class="price">$25/adult, $15/child</p>
+            <!-- Button to add buffet option to cart -->
+            <a href="#" class="buy-now">Add to Cart</a>
+          </article>
+
+          <!-- VIP experience option - similar structure to previous add-ons -->
+          <article class="grid-item">
+            <!-- Image for VIP experience -->
+            <img src="images/vip-experience.jpg" alt="King eating grapes" />
+            <!-- Heading for VIP experience -->
+            <h3>Enchanted VIP Experience</h3>
+            <!-- Description of VIP experience benefits -->
+            <p>
+              Personal guide, exclusive attraction access, and premium viewing
+              for shows.
+            </p>
+            <!-- Price display for VIP experience -->
+            <p class="price">$75/person</p>
+            <!-- Button to add VIP experience to cart -->
+            <a href="#" class="buy-now">Add to Cart</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Annual and monthly passes section - for frequent visitors who want unlimited access -->
+      <section class="annual-monthly-passes">
+        <!-- Heading for the annual and monthly passes section -->
+        <h2>Annual and Monthly Passes</h2>
+        <!-- Grid container for organizing pass options -->
+        <div class="grid">
+          <!-- Monthly pass option -->
+          <article class="grid-item">
+            <!-- Image representing monthly pass benefits -->
+            <img src="images/monthly-pass.jpg" alt="Monthly Pass" />
+            <!-- Heading for monthly pass -->
+            <h3>Monthly Pass</h3>
+            <!-- Description of monthly pass benefits -->
+            <p>
+              Perfect for frequent explorers! Unlimited visits each month, 5%
+              off food and merchandise.
+            </p>
+            <!-- Price display for monthly pass -->
+            <p class="price">$49/month</p>
+            <!-- Purchase button for monthly pass -->
+            <a href="#" class="buy-now">Buy Now</a>
+          </article>
+
+          <!-- Silver annual pass option - similar structure to monthly pass -->
+          <article class="grid-item">
+            <!-- Image for silver annual pass -->
+            <img src="images/silver-pass.jpg" alt="Silver Annual Pass" />
+            <!-- Heading for silver annual pass -->
+            <h3>Silver Annual Pass</h3>
+            <!-- Description of silver annual pass benefits -->
+            <p>
+              Unlimited visits for 12 months, 10% off food and merchandise, free
+              parking.
+            </p>
+            <!-- Price display for silver annual pass -->
+            <p class="price">$199/year</p>
+            <!-- Purchase button for silver annual pass -->
+            <a href="#" class="buy-now">Buy Now</a>
+          </article>
+
+          <!-- Gold annual pass option - similar structure to previous pass options -->
+          <article class="grid-item">
+            <!-- Image for gold annual pass -->
+            <img src="images/gold-pass.jpg" alt="Gold Annual Pass" />
+            <!-- Heading for gold annual pass -->
+            <h3>Gold Annual Pass</h3>
+            <!-- Description of gold annual pass benefits -->
+            <p>
+              All Silver benefits plus Warp Speed Entry, 4 guest passes, and
+              exclusive event invites.
+            </p>
+            <!-- Price display for gold annual pass -->
+            <p class="price">$299/year</p>
+            <!-- Purchase button for gold annual pass -->
+            <a href="#" class="buy-now">Buy Now</a>
+          </article>
+        </div>
+        <!-- Pass benefits information - highlights the advantages of having a pass -->
+        <div class="pass-benefits">
+          <!-- Heading for pass benefits section -->
+          <h3>All passes include:</h3>
+          <!-- Unordered list of pass benefits -->
+          <ul>
+            <!-- List item for special events benefit -->
+            <li>Special passholder events</li>
+            <!-- List item for early access benefit -->
+            <li>Early access to new attractions</li>
+            <!-- List item for discounts benefit -->
+            <li>Discounts on Cosmic VIP Experiences</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Additional information section - important notes for visitors to consider -->
+      <section class="additional-info">
+        <!-- Heading for additional information section -->
+        <h2>Additional Information</h2>
+        <!-- Unordered list of additional information points -->
+        <ul>
+          <!-- List item about price changes -->
+          <li>Prices subject to change during holidays and special events</li>
+          <!-- List item about group rates -->
+          <li>Group rates available for parties of 15 or more</li>
+          <!-- List item about promotional deals -->
+          <li>
+            Keep an eye on our Promotional Deals section for limited-time
+            offers!
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer section - contains additional links and information -->
+    <footer>
+      <!-- Container for all footer content -->
+      <div class="footer">
+        <!-- Large Orbitland text for branding -->
+        <p id="orbitland">ORBITLAND</p>
+        <!-- Horizontal rule for visual separation -->
+        <hr />
+        <!-- Logo container with responsive grid classes -->
+        <div class="pure-u-1 pure-u-md-1-8">
+          <!-- Logo image in the footer -->
+          <img
+            class="pure-img-responsive logo"
+            src="/images/white-logo.svg"
+            alt="Orbitland Logo"
+          />
+        </div>
+        <!-- Footer navigation links container -->
+        <div class="pure-u-1 pure-u-md-1-5">
+          <!-- List of main navigation links -->
+          <ul class="pure-menu-list">
+            <!-- Home page link -->
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">Home &#9756;</a>
+            </li>
+            <!-- Attractions page link -->
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">Attractions &#9756;</a>
+            </li>
+            <!-- Tickets page link -->
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">Tickets &#9756;</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Invisible horizontal rule for spacing -->
+        <hr class="inv" />
+        <!-- Additional footer links container -->
+        <div class="pure-u-1 pure-u-md-1-3">
+          <!-- List of secondary navigation links -->
+          <ul class="small-info pure-menu-list">
+            <!-- Careers page link -->
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">Careers</a>
+            </li>
+            <!-- Rules & Regulations page link -->
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">Rules & Regulations</a>
+            </li>
+            <!-- Policies page link -->
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">Policies</a>
+            </li>
+            <!-- Contact page link -->
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Another invisible horizontal rule for spacing -->
+        <hr class="inv" />
+        <!-- Newsletter signup form container -->
+        <div class="pure-u-1 pure-u-md-1-4">
+          <div class="newsletter-container">
+            <!-- Newsletter signup heading -->
+            <h2 id="newsletter">SIGN UP TO NEWSLETTER</h2>
+            <!-- Newsletter signup form -->
+            <form class="pure-form">
+              <!-- Fieldset for form elements -->
+              <fieldset style="padding-bottom: 0">
+                <!-- Grid container for form layout -->
+                <div class="pure-g">
+                  <!-- Email input container -->
+                  <div class="pure-u-3-4">
+                    <!-- Email input field -->
+                    <input
+                      type="email"
+                      class="pure-input-1"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <!-- Submit button container -->
+                  <div class="pure-u-1-4">
+                    <!-- Submit button for the form -->
+                    <button
+                      type="submit"
+                      class="pure-button pure-button-primary"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+            <!-- Opt-out information for the newsletter -->
+            <p>
+              Opt out at any time by clicking the unsubscribe link included in
+              each of our emails.
+            </p>
+          </div>
+        </div>
         <!-- Copyright and design credit -->
         <div class="pure-u-1">
-           <!-- Horizontal rule for visual separation -->
+          <!-- Horizontal rule for visual separation -->
           <hr />
           <!-- Copyright information container -->
           <div class="pure-u-1 pure-u-md-1-2">
-             <!-- Copyright text -->
+            <!-- Copyright text -->
             <p id="copyright">&copy; COPYRIGHT 2024 Orbitland</p>
           </div>
           <!-- Design by information container -->
